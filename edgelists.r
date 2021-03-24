@@ -29,7 +29,7 @@ idnodes <- nodes %>% rowid_to_column("id")
 nodes
 
 #Create unique IDs for edges
-
+  
 
 
 
