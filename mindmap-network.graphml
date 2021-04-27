@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Happy place"/>
+<node id="Events"/>
+<node id="Friend"/>
+<node id="John"/>
+<node id="Parties"/>
+<node id="Job"/>
+<node id="Experience"/>
+<node id="Info"/>
+<node id="Money"/>
+<node id="Work"/>
+<node id="Low tide"/>
+<node id="Boots"/>
+<node id="Garbage"/>
+<node id="Mud"/>
+<node id="Animals"/>
+<node id="Crabs"/>
+<node id="Wading birds"/>
+<node id="People"/>
+<node id="Adam"/>
+<node id="Majora Carter"/>
+<node id="Boogie Down Grind"/>
+<node id="Greening the Ghetto"/>
+<node id="Hyde HS"/>
+<node id="Teacher Name"/>
+<node id="Torture"/>
+<node id="Pain"/>
+<node id="The sexy student"/>
+<node id="The ratchet student"/>
+<node id="Adam Green"/>
+<node id="Emotions"/>
+<node id="Anxiety"/>
+<node id="Memories"/>
+<node id="Peace"/>
+<node id="Scared"/>
+<node id="Judgment"/>
+<node id="Find yourself"/>
+<node id="Learn about your place"/>
+<node id="Getting on nerves"/>
+<node id="Family"/>
+<node id="Connections"/>
+<node id="Community members"/>
+<node id="NYC"/>
+<node id="RTB"/>
+<node id="Schools"/>
+<node id="Health"/>
+<node id="Asthma"/>
+<node id="Pollution"/>
+<node id="CSO"/>
+<node id="Plants"/>
+<node id="Places"/>
+<node id="Hunts point"/>
+<node id="Long Island Sound"/>
+<node id="Frost Valley"/>
+<node id="Atlantic Ocean"/>
+<node id="Activities"/>
+<node id="Turkey chases"/>
+<node id="Hiking"/>
+<node id="Weeklong"/>
+<node id="Birdwatching"/>
+<node id="Cleaning the water"/>
+<node id="Rowing"/>
+<node id="Yellow night heron"/>
+<node id="Things in the river"/>
+<node id="Nasty"/>
+<node id="Water"/>
+<node id="Waves"/>
+<node id="Rocks"/>
+<node id="nan"/>
+<node id="Trash"/>
+<node id="Random things"/>
+<node id="Bottles"/>
+<node id="Plastic bags"/>
+<node id="Shoes"/>
+<node id="Socks"/>
+<node id="Dirty"/>
+<node id="Parts"/>
+<node id="High tide"/>
+<node id="Mudflat"/>
+<node id="Dirty shoes"/>
+<node id="Docks"/>
+<node id="Trees"/>
+<node id="Seaweed"/>
+<node id="Branch"/>
+<node id="Inside joke"/>
+<node id="Birds"/>
+<node id="Fish"/>
+<node id="Blue heron"/>
+<node id="Great Egret"/>
+<node id="Cormorant"/>
+<node id="Communities"/>
+<node id="Hunts Point"/>
+<node id="Soundview"/>
+<node id="Basketball"/>
+<node id="Fishing"/>
+<node id="Fun"/>
+<node id="Games"/>
+<node id="Science"/>
+<node id="Swimming"/>
+<node id="Teaching_Learning"/>
+<node id="Water quality"/>
+<node id="YMCA"/>
+<node id="Coach Will"/>
+<node id="Water Quality"/>
+<node id="Dissolved Oxygen"/>
+<node id="Nitrates"/>
+<node id="pH"/>
+<node id="Salinity"/>
+<node id="Turbidity"/>
+<node id="Cormorants"/>
+<node id="Ducks"/>
+<node id="Egrets"/>
+<node id="Bronx"/>
+<node id="BEC"/>
+<node id="Chopped cheese"/>
+<node id="SM"/>
+<node id="Grant"/>
+<node id="No purple or dark colors"/>
+<node id="Staff"/>
+<node id="Friends"/>
+<node id="Student"/>
+<node id="Learning"/>
+<node id="Teaching"/>
+<node id="Overnight"/>
+<node id="Dice"/>
+<node id="Lion King"/>
+<node id="Student beat Student"/>
+<node id="Phragmites"/>
+<node id="Preservation"/>
+<node id="Oysters"/>
+<node id="Presevation"/>
+<node id="Planting trees"/>
+<node id="Removing invasives"/>
+<node id="Deciduous"/>
+<node id="Evergreen"/>
+<node id="Alternate"/>
+<node id="Opposite"/>
+<node id="Photosynthesis"/>
+<node id="Safety"/>
+<node id="Boat Bag_Rope Bag"/>
+<node id="PFDs"/>
+<node id="Technical Skills"/>
+<node id="ESP"/>
+<node id="Job Skills"/>
+<node id="Knots"/>
+<node id="LNT"/>
+<node id="Bowline"/>
+<node id="Boat"/>
+<node id="Dirt"/>
+<node id="Dock"/>
+<node id="Mudflats"/>
+<node id="Uggs"/>
+<node id="Tides"/>
+<node id="Staff name"/>
+<node id="Stuck"/>
+<edge source="Happy place" target="Events"/>
+<edge source="Happy place" target="Friend"/>
+<edge source="Happy place" target="John"/>
+<edge source="Happy place" target="Parties"/>
+<edge source="Job" target="Experience"/>
+<edge source="Job" target="Info"/>
+<edge source="Job" target="Money"/>
+<edge source="Job" target="Work"/>
+<edge source="Low tide" target="Boots"/>
+<edge source="Low tide" target="Garbage"/>
+<edge source="Low tide" target="Mud"/>
+<edge source="Low tide" target="Animals"/>
+<edge source="Low tide" target="Water"/>
+<edge source="Low tide" target="Tides"/>
+<edge source="Low tide" target="Staff name"/>
+<edge source="Low tide" target="Stuck"/>
+<edge source="Low tide" target="Uggs"/>
+<edge source="Mud" target="Parts"/>
+<edge source="Mud" target="Mudflat"/>
+<edge source="Mud" target="Dirty shoes"/>
+<edge source="Animals" target="Crabs"/>
+<edge source="Animals" target="Wading birds"/>
+<edge source="Animals" target="Pollution"/>
+<edge source="Animals" target="Birds"/>
+<edge source="Animals" target="Fish"/>
+<edge source="People" target="Adam"/>
+<edge source="People" target="Majora Carter"/>
+<edge source="People" target="The sexy student"/>
+<edge source="People" target="The ratchet student"/>
+<edge source="People" target="Adam Green"/>
+<edge source="People" target="Find yourself"/>
+<edge source="People" target="Learn about your place"/>
+<edge source="People" target="Getting on nerves"/>
+<edge source="People" target="Family"/>
+<edge source="People" target="Connections"/>
+<edge source="People" target="Memories"/>
+<edge source="People" target="Community members"/>
+<edge source="People" target="NYC"/>
+<edge source="People" target="Communities"/>
+<edge source="People" target="Staff"/>
+<edge source="People" target="Friends"/>
+<edge source="People" target="Student"/>
+<edge source="Majora Carter" target="Boogie Down Grind"/>
+<edge source="Majora Carter" target="Greening the Ghetto"/>
+<edge source="Majora Carter" target="Hyde HS"/>
+<edge source="Hyde HS" target="Teacher Name"/>
+<edge source="Hyde HS" target="Torture"/>
+<edge source="Hyde HS" target="Pain"/>
+<edge source="Emotions" target="Anxiety"/>
+<edge source="Emotions" target="Memories"/>
+<edge source="Emotions" target="Peace"/>
+<edge source="Emotions" target="Scared"/>
+<edge source="Emotions" target="Judgment"/>
+<edge source="Memories" target="Inside joke"/>
+<edge source="Family" target="RTB"/>
+<edge source="Connections" target="RTB"/>
+<edge source="NYC" target="Places"/>
+<edge source="RTB" target="Schools"/>
+<edge source="RTB" target="Communities"/>
+<edge source="RTB" target="Bronx"/>
+<edge source="RTB" target="No purple or dark colors"/>
+<edge source="RTB" target="Weeklong"/>
+<edge source="Health" target="Asthma"/>
+<edge source="Health" target="Pollution"/>
+<edge source="Pollution" target="CSO"/>
+<edge source="Pollution" target="Plants"/>
+<edge source="Pollution" target="Things in the river"/>
+<edge source="Plants" target="Trees"/>
+<edge source="Plants" target="Seaweed"/>
+<edge source="Plants" target="Preservation"/>
+<edge source="Plants" target="Alternate"/>
+<edge source="Plants" target="Opposite"/>
+<edge source="Plants" target="Photosynthesis"/>
+<edge source="Plants" target="Phragmites"/>
+<edge source="Places" target="Hunts point"/>
+<edge source="Places" target="Long Island Sound"/>
+<edge source="Places" target="Frost Valley"/>
+<edge source="Places" target="Atlantic Ocean"/>
+<edge source="Places" target="Soundview"/>
+<edge source="Places" target="YMCA"/>
+<edge source="Activities" target="Turkey chases"/>
+<edge source="Activities" target="Hiking"/>
+<edge source="Activities" target="Weeklong"/>
+<edge source="Activities" target="Birdwatching"/>
+<edge source="Activities" target="Cleaning the water"/>
+<edge source="Activities" target="Rowing"/>
+<edge source="Activities" target="Basketball"/>
+<edge source="Activities" target="Fishing"/>
+<edge source="Activities" target="Fun"/>
+<edge source="Activities" target="Games"/>
+<edge source="Activities" target="Science"/>
+<edge source="Activities" target="Swimming"/>
+<edge source="Activities" target="Teaching_Learning"/>
+<edge source="Activities" target="Water quality"/>
+<edge source="Weeklong" target="Overnight"/>
+<edge source="Birdwatching" target="Yellow night heron"/>
+<edge source="Rowing" target="Water"/>
+<edge source="Things in the river" target="Nasty"/>
+<edge source="Things in the river" target="Water"/>
+<edge source="Things in the river" target="Waves"/>
+<edge source="Things in the river" target="Boat"/>
+<edge source="Things in the river" target="Dirt"/>
+<edge source="Things in the river" target="Dock"/>
+<edge source="Things in the river" target="Mudflats"/>
+<edge source="Water" target="Parts"/>
+<edge source="Water" target="High tide"/>
+<edge source="Rocks" target="nan"/>
+<edge source="nan" target="Dirty"/>
+<edge source="nan" target="Docks"/>
+<edge source="Trash" target="Random things"/>
+<edge source="Trash" target="Bottles"/>
+<edge source="Trash" target="Plastic bags"/>
+<edge source="Random things" target="Shoes"/>
+<edge source="Random things" target="Socks"/>
+<edge source="High tide" target="Tides"/>
+<edge source="Trees" target="Branch"/>
+<edge source="Birds" target="Blue heron"/>
+<edge source="Birds" target="Great Egret"/>
+<edge source="Birds" target="Cormorant"/>
+<edge source="Birds" target="Cormorants"/>
+<edge source="Birds" target="Ducks"/>
+<edge source="Birds" target="Egrets"/>
+<edge source="Communities" target="Hunts Point"/>
+<edge source="Communities" target="Soundview"/>
+<edge source="Hunts Point" target="Bronx"/>
+<edge source="Soundview" target="Phragmites"/>
+<edge source="Games" target="Overnight"/>
+<edge source="Swimming" target="YMCA"/>
+<edge source="Water quality" target="Technical Skills"/>
+<edge source="YMCA" target="Coach Will"/>
+<edge source="Water Quality" target="Dissolved Oxygen"/>
+<edge source="Water Quality" target="Nitrates"/>
+<edge source="Water Quality" target="pH"/>
+<edge source="Water Quality" target="Salinity"/>
+<edge source="Water Quality" target="Turbidity"/>
+<edge source="Bronx" target="BEC"/>
+<edge source="Bronx" target="Chopped cheese"/>
+<edge source="Bronx" target="SM"/>
+<edge source="Bronx" target="Grant"/>
+<edge source="Staff" target="Learning"/>
+<edge source="Staff" target="Teaching"/>
+<edge source="Overnight" target="Dice"/>
+<edge source="Overnight" target="Lion King"/>
+<edge source="Dice" target="Student beat Student"/>
+<edge source="Preservation" target="Oysters"/>
+<edge source="Preservation" target="Removing invasives"/>
+<edge source="Presevation" target="Planting trees"/>
+<edge source="Planting trees" target="Deciduous"/>
+<edge source="Planting trees" target="Evergreen"/>
+<edge source="Safety" target="Boat Bag_Rope Bag"/>
+<edge source="Safety" target="PFDs"/>
+<edge source="Technical Skills" target="ESP"/>
+<edge source="Technical Skills" target="Job Skills"/>
+<edge source="ESP" target="Knots"/>
+<edge source="ESP" target="LNT"/>
+<edge source="Knots" target="Bowline"/>
+<edge source="Mudflats" target="Uggs"/>
+</graph></graphml>

@@ -9,7 +9,9 @@ library(dplyr)
 
 #Load data
 
-mindmap <- readxl::read_excel("~/Github/mindmap/grp-edgelist.xlsx")
+mindmap <- read.csv("C:/Users/Annie Armstrong/Documents/Github/mindmap/groupedgelists.csv")
+
+mindmap
 
 #Create edge and node lists
 
