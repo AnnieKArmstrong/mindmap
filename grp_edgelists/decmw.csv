@@ -1,36 +1,44 @@
-﻿Edge,Target,Month,Group
-Emotions,Anxiety,December,MW
-Emotions,Memories,December,MW
-Emotions,Peace,December,MW
-Emotions,Scared,December,MW
-Emotions,Judgment,December,MW
-People,Find yourself,December,MW
-People,Learn about your place,December,MW
-People,Getting on nerves,December,MW
-People,Family,December,MW
-People,Connections,December,MW
-People,Memories,December,MW
-People,Community members,December,MW
-People,NYC,December,MW
-Connections,RTB,December,MW
-RTB,Schools,December,MW
-Health,Asthma,December,MW
-Health,Pollution,December,MW
-Pollution,CSO,December,MW
-Pollution,Animals,December,MW
-Pollution,Plants,December,MW
-Places,Hunts point,December,MW
-Places,Long Island Sound,December,MW
-Places,NYC,December,MW
-Places,Frost Valley,December,MW
-Places,Atlantic Ocean,December,MW
-Activities,Turkey chases,December,MW
-Activities,Hiking,December,MW
-Activities,Weeklong,December,MW
-Activities,Birdwatching,December,MW
-Activities,Cleaning the water,December,MW
-Activities,Rowing,December,MW
-Birdwatching,Yellow night heron,December,MW
-Things in the river,Nasty,December,MW
-Things in the river,Water,December,MW
-Things in the river,Waves,December,MW
+﻿Edge,Target
+Bronx River,Emotions
+Bronx River,People
+Bronx River,Connections
+Bronx River,Health
+Bronx River,Places
+Bronx River,Activities
+Bronx River,Birdwatching
+Bronx River,Things-in-water
+Emotions,Anxiety
+Emotions,Memories
+Emotions,Peace
+Emotions,Scared
+Emotions,Judgment
+People,Find-yourself
+People,Learn about your place
+People,Getting on nerves
+People,Family
+People,Connections
+People,Memories
+People,Community members
+People,NYC
+Connections,RTB
+RTB,Schools
+Health,Asthma
+Health,Pollution
+Pollution,CSO
+Pollution,Animals
+Pollution,Plants
+Places,Hunts point
+Places,Long Island Sound
+Places,NYC
+Places,Frost Valley
+Places,Atlantic Ocean
+Activities,Turkey chases
+Activities,Hiking
+Activities,Weeklong
+Activities,Birdwatching
+Activities,Cleaning the water
+Activities,Rowing
+Birdwatching,Yellow night heron
+Things-in-water,Nasty
+Things-in-water,Water
+Things-in-water,Waves

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Bronx River"/>
+<node id="Emotions"/>
+<node id="People"/>
+<node id="Connections"/>
+<node id="Health"/>
+<node id="Places"/>
+<node id="Activities"/>
+<node id="Birdwatching"/>
+<node id="Things-in-water"/>
+<node id="Anxiety"/>
+<node id="Memories"/>
+<node id="Peace"/>
+<node id="Scared"/>
+<node id="Judgment"/>
+<node id="Find-yourself"/>
+<node id="Learn about your place"/>
+<node id="Getting on nerves"/>
+<node id="Family"/>
+<node id="Community members"/>
+<node id="NYC"/>
+<node id="RTB"/>
+<node id="Schools"/>
+<node id="Asthma"/>
+<node id="Pollution"/>
+<node id="CSO"/>
+<node id="Animals"/>
+<node id="Plants"/>
+<node id="Hunts point"/>
+<node id="Long Island Sound"/>
+<node id="Frost Valley"/>
+<node id="Atlantic Ocean"/>
+<node id="Turkey chases"/>
+<node id="Hiking"/>
+<node id="Weeklong"/>
+<node id="Cleaning the water"/>
+<node id="Rowing"/>
+<node id="Yellow night heron"/>
+<node id="Nasty"/>
+<node id="Water"/>
+<node id="Waves"/>
+<edge source="Bronx River" target="Emotions"/>
+<edge source="Bronx River" target="People"/>
+<edge source="Bronx River" target="Connections"/>
+<edge source="Bronx River" target="Health"/>
+<edge source="Bronx River" target="Places"/>
+<edge source="Bronx River" target="Activities"/>
+<edge source="Bronx River" target="Birdwatching"/>
+<edge source="Bronx River" target="Things-in-water"/>
+<edge source="Emotions" target="Anxiety"/>
+<edge source="Emotions" target="Memories"/>
+<edge source="Emotions" target="Peace"/>
+<edge source="Emotions" target="Scared"/>
+<edge source="Emotions" target="Judgment"/>
+<edge source="People" target="Find-yourself"/>
+<edge source="People" target="Learn about your place"/>
+<edge source="People" target="Getting on nerves"/>
+<edge source="People" target="Family"/>
+<edge source="People" target="Connections"/>
+<edge source="People" target="Memories"/>
+<edge source="People" target="Community members"/>
+<edge source="People" target="NYC"/>
+<edge source="Connections" target="RTB"/>
+<edge source="Health" target="Asthma"/>
+<edge source="Health" target="Pollution"/>
+<edge source="Places" target="Hunts point"/>
+<edge source="Places" target="Long Island Sound"/>
+<edge source="Places" target="NYC"/>
+<edge source="Places" target="Frost Valley"/>
+<edge source="Places" target="Atlantic Ocean"/>
+<edge source="Activities" target="Turkey chases"/>
+<edge source="Activities" target="Hiking"/>
+<edge source="Activities" target="Weeklong"/>
+<edge source="Activities" target="Birdwatching"/>
+<edge source="Activities" target="Cleaning the water"/>
+<edge source="Activities" target="Rowing"/>
+<edge source="Birdwatching" target="Yellow night heron"/>
+<edge source="Things-in-water" target="Nasty"/>
+<edge source="Things-in-water" target="Water"/>
+<edge source="Things-in-water" target="Waves"/>
+<edge source="RTB" target="Schools"/>
+<edge source="Pollution" target="CSO"/>
+<edge source="Pollution" target="Animals"/>
+<edge source="Pollution" target="Plants"/>
+</graph></graphml>

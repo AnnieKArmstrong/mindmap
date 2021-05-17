@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Bronx River"/>
+<node id="Rocks"/>
+<node id="Trash"/>
+<node id="Dirty"/>
+<node id="Parts"/>
+<node id="Docks"/>
+<node id="Plants"/>
+<node id="Memories"/>
+<node id="Animals"/>
+<node id="Communities"/>
+<node id="nan"/>
+<node id="Random things"/>
+<node id="Bottles"/>
+<node id="Plastic bags"/>
+<node id="Shoes"/>
+<node id="Socks"/>
+<node id="Water"/>
+<node id="Mud"/>
+<node id="Low tide"/>
+<node id="High tide"/>
+<node id="Rowing"/>
+<node id="Mudflat"/>
+<node id="Dirty shoes"/>
+<node id="Trees"/>
+<node id="Seaweed"/>
+<node id="Branch"/>
+<node id="Inside joke"/>
+<node id="Birds"/>
+<node id="Fish"/>
+<node id="Crabs"/>
+<node id="Blue heron"/>
+<node id="Great Egret"/>
+<node id="Cormorant"/>
+<node id="Hunts Point"/>
+<node id="People"/>
+<node id="RTB"/>
+<node id="Soundview"/>
+<edge source="Bronx River" target="Rocks"/>
+<edge source="Bronx River" target="Trash"/>
+<edge source="Bronx River" target="Dirty"/>
+<edge source="Bronx River" target="Parts"/>
+<edge source="Bronx River" target="Docks"/>
+<edge source="Bronx River" target="Plants"/>
+<edge source="Bronx River" target="Memories"/>
+<edge source="Bronx River" target="Animals"/>
+<edge source="Bronx River" target="Communities"/>
+<edge source="Rocks" target="nan"/>
+<edge source="Trash" target="Random things"/>
+<edge source="Trash" target="Bottles"/>
+<edge source="Trash" target="Plastic bags"/>
+<edge source="Dirty" target="nan"/>
+<edge source="Parts" target="Water"/>
+<edge source="Parts" target="Mud"/>
+<edge source="Docks" target="nan"/>
+<edge source="Plants" target="Trees"/>
+<edge source="Plants" target="Seaweed"/>
+<edge source="Memories" target="Inside joke"/>
+<edge source="Animals" target="Birds"/>
+<edge source="Animals" target="Fish"/>
+<edge source="Animals" target="Crabs"/>
+<edge source="Communities" target="Hunts Point"/>
+<edge source="Communities" target="People"/>
+<edge source="Communities" target="RTB"/>
+<edge source="Communities" target="Soundview"/>
+<edge source="Random things" target="Shoes"/>
+<edge source="Random things" target="Socks"/>
+<edge source="Water" target="Low tide"/>
+<edge source="Water" target="High tide"/>
+<edge source="Water" target="Rowing"/>
+<edge source="Mud" target="Mudflat"/>
+<edge source="Mud" target="Dirty shoes"/>
+<edge source="Trees" target="Branch"/>
+<edge source="Birds" target="Blue heron"/>
+<edge source="Birds" target="Great Egret"/>
+<edge source="Birds" target="Cormorant"/>
+</graph></graphml>

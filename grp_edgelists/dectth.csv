@@ -1,76 +1,85 @@
-﻿Edge,Target,Month,Group
-Activities,Basketball,December,TTh
-Activities,Fishing,December,TTh
-Activities,Fun,December,TTh
-Activities,Games,December,TTh
-Activities,Rowing,December,TTh
-Activities,Science,December,TTh
-Activities,Swimming,December,TTh
-Activities,Teaching_Learning,December,TTh
-Activities,Water quality,December,TTh
-Swimming,YMCA,December,TTh
-YMCA,Coach Will,December,TTh
-Water Quality,Dissolved Oxygen,December,TTh
-Water Quality,Nitrates,December,TTh
-Water Quality,pH,December,TTh
-Water Quality,Salinity,December,TTh
-Water Quality,Turbidity,December,TTh
-Animals,Birds,December,TTh
-Animals,Fish,December,TTh
-Birds,Cormorants,December,TTh
-Birds,Ducks,December,TTh
-Birds,Egrets,December,TTh
-Bronx,BEC,December,TTh
-Bronx,Chopped cheese,December,TTh
-Bronx,Hunts Point,December,TTh
-Bronx,RTB,December,TTh
-Bronx,SM,December,TTh
-Bronx,Grant,December,TTh
-RTB,Family,December,TTh
-RTB,No purple or dark colors,December,TTh
-RTB,Weeklong,December,TTh
-Family,People,December,TTh
-People,Staff,December,TTh
-People,Friends,December,TTh
-People,Student,December,TTh
-Staff,Learning,December,TTh
-Staff,Teaching,December,TTh
-Weeklong,Overnight,December,TTh
-Overnight,Dice,December,TTh
-Overnight,Games,December,TTh
-Overnight,Lion King,December,TTh
-Dice,Student beat Student,December,TTh
-Places,Hunts point,December,TTh
-Places,Soundview,December,TTh
-Places,YMCA,December,TTh
-Soundview,Phragmites,December,TTh
-YMCA,Coach Will,December,TTh
-Preservation,Oysters,December,TTh
-Presevation,Planting trees,December,TTh
-Preservation,Plants,December,TTh
-Preservation,Removing invasives,December,TTh
-Planting trees,Deciduous,December,TTh
-Planting trees,Evergreen,December,TTh
-Plants,Alternate,December,TTh
-Plants,Opposite,December,TTh
-Plants,Photosynthesis,December,TTh
-Plants,Phragmites,December,TTh
-Safety,Boat Bag_Rope Bag,December,TTh
-Safety,PFDs,December,TTh
-Technical Skills,ESP,December,TTh
-Technical Skills,Job Skills,December,TTh
-Technical Skills,Water quality,December,TTh
-ESP,Knots,December,TTh
-ESP,LNT,December,TTh
-Knots,Bowline,December,TTh
-Things in the river,Boat,December,TTh
-Things in the river,Dirt,December,TTh
-Things in the river,Dock,December,TTh
-Things in the river,Mudflats,December,TTh
-Things in the river,Pollution,December,TTh
-Mudflats,Uggs,December,TTh
-Tides,High tide,December,TTh
-Tides,Low tide,December,TTh
-Low tide,Staff name,December,TTh
-Low tide,Stuck,December,TTh
-Low tide,Uggs,December,TTh
+﻿Edge,Target
+Bronx River,Activities
+Bronx River,Animals
+Bronx River,Bronx
+Bronx River,Places
+Bronx River,Preservation
+Bronx River,Safety
+Bronx River,Technical Skills
+Bronx River,Things in the river
+Bronx River,Tides
+Activities,Basketball
+Activities,Fishing
+Activities,Fun
+Activities,Games
+Activities,Rowing
+Activities,Science
+Activities,Swimming
+Activities,Teaching_Learning
+Activities,Water quality
+Swimming,YMCA
+YMCA,Coach Will
+Water quality,Dissolved Oxygen
+Water quality,Nitrates
+Water quality,pH
+Water quality,Salinity
+Water quality,Turbidity
+Animals,Birds
+Animals,Fish
+Birds,Cormorants
+Birds,Ducks
+Birds,Egrets
+Bronx,BEC
+Bronx,Chopped cheese
+Bronx,Hunts Point
+Bronx,RTB
+Bronx,SM
+Bronx,Grant
+RTB,Family
+RTB,No purple or dark colors
+RTB,Weeklong
+Family,People
+People,Staff
+People,Friends
+People,Student
+Staff,Learning
+Staff,Teaching
+Weeklong,Overnight
+Overnight,Dice
+Overnight,Games
+Overnight,Lion King
+Dice,Student beat Student
+Places,Hunts point
+Places,Soundview
+Places,YMCA
+Soundview,Phragmites
+YMCA,Coach Will
+Preservation,Oysters
+Presevation,Planting trees
+Preservation,Plants
+Preservation,Removing invasives
+Planting trees,Deciduous
+Planting trees,Evergreen
+Plants,Evergreen
+Plants,Evergreen
+Plants,Evergreen
+Plants,Evergreen
+Safety,Evergreen
+Safety,Evergreen
+Technical Skills,Evergreen
+Technical Skills,Evergreen
+Technical Skills,Evergreen
+ESP,Evergreen
+ESP,Evergreen
+Knots,Evergreen
+Things in the river,Evergreen
+Things in the river,Evergreen
+Things in the river,Evergreen
+Things in the river,Evergreen
+Things in the river,Evergreen
+Mudflats,Evergreen
+Tides,Evergreen
+Tides,Evergreen
+Low tide,Evergreen
+Low tide,Evergreen
+Low tide,Evergreen

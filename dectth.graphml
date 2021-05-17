@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Bronx River"/>
+<node id="Activities"/>
+<node id="Animals"/>
+<node id="Bronx"/>
+<node id="Places"/>
+<node id="Preservation"/>
+<node id="Safety"/>
+<node id="Technical Skills"/>
+<node id="Things in the river"/>
+<node id="Tides"/>
+<node id="Basketball"/>
+<node id="Fishing"/>
+<node id="Fun"/>
+<node id="Games"/>
+<node id="Rowing"/>
+<node id="Science"/>
+<node id="Swimming"/>
+<node id="Teaching_Learning"/>
+<node id="Water quality"/>
+<node id="YMCA"/>
+<node id="Coach Will"/>
+<node id="Dissolved Oxygen"/>
+<node id="Nitrates"/>
+<node id="pH"/>
+<node id="Salinity"/>
+<node id="Turbidity"/>
+<node id="Birds"/>
+<node id="Fish"/>
+<node id="Cormorants"/>
+<node id="Ducks"/>
+<node id="Egrets"/>
+<node id="BEC"/>
+<node id="Chopped cheese"/>
+<node id="Hunts Point"/>
+<node id="RTB"/>
+<node id="SM"/>
+<node id="Grant"/>
+<node id="Family"/>
+<node id="No purple or dark colors"/>
+<node id="Weeklong"/>
+<node id="People"/>
+<node id="Staff"/>
+<node id="Friends"/>
+<node id="Student"/>
+<node id="Learning"/>
+<node id="Teaching"/>
+<node id="Overnight"/>
+<node id="Dice"/>
+<node id="Lion King"/>
+<node id="Student beat Student"/>
+<node id="Hunts point"/>
+<node id="Soundview"/>
+<node id="Phragmites"/>
+<node id="Oysters"/>
+<node id="Presevation"/>
+<node id="Planting trees"/>
+<node id="Plants"/>
+<node id="Removing invasives"/>
+<node id="Deciduous"/>
+<node id="Evergreen"/>
+<node id="ESP"/>
+<node id="Knots"/>
+<node id="Mudflats"/>
+<node id="Low tide"/>
+<edge source="Bronx River" target="Activities"/>
+<edge source="Bronx River" target="Animals"/>
+<edge source="Bronx River" target="Bronx"/>
+<edge source="Bronx River" target="Places"/>
+<edge source="Bronx River" target="Preservation"/>
+<edge source="Bronx River" target="Safety"/>
+<edge source="Bronx River" target="Technical Skills"/>
+<edge source="Bronx River" target="Things in the river"/>
+<edge source="Bronx River" target="Tides"/>
+<edge source="Activities" target="Basketball"/>
+<edge source="Activities" target="Fishing"/>
+<edge source="Activities" target="Fun"/>
+<edge source="Activities" target="Games"/>
+<edge source="Activities" target="Rowing"/>
+<edge source="Activities" target="Science"/>
+<edge source="Activities" target="Swimming"/>
+<edge source="Activities" target="Teaching_Learning"/>
+<edge source="Activities" target="Water quality"/>
+<edge source="Animals" target="Birds"/>
+<edge source="Animals" target="Fish"/>
+<edge source="Bronx" target="BEC"/>
+<edge source="Bronx" target="Chopped cheese"/>
+<edge source="Bronx" target="Hunts Point"/>
+<edge source="Bronx" target="RTB"/>
+<edge source="Bronx" target="SM"/>
+<edge source="Bronx" target="Grant"/>
+<edge source="Places" target="Hunts point"/>
+<edge source="Places" target="Soundview"/>
+<edge source="Places" target="YMCA"/>
+<edge source="Preservation" target="Oysters"/>
+<edge source="Preservation" target="Plants"/>
+<edge source="Preservation" target="Removing invasives"/>
+<edge source="Safety" target="Evergreen"/>
+<edge source="Technical Skills" target="Evergreen"/>
+<edge source="Things in the river" target="Evergreen"/>
+<edge source="Tides" target="Evergreen"/>
+<edge source="Games" target="Overnight"/>
+<edge source="Swimming" target="YMCA"/>
+<edge source="Water quality" target="Dissolved Oxygen"/>
+<edge source="Water quality" target="Nitrates"/>
+<edge source="Water quality" target="pH"/>
+<edge source="Water quality" target="Salinity"/>
+<edge source="Water quality" target="Turbidity"/>
+<edge source="YMCA" target="Coach Will"/>
+<edge source="Birds" target="Cormorants"/>
+<edge source="Birds" target="Ducks"/>
+<edge source="Birds" target="Egrets"/>
+<edge source="RTB" target="Family"/>
+<edge source="RTB" target="No purple or dark colors"/>
+<edge source="RTB" target="Weeklong"/>
+<edge source="Family" target="People"/>
+<edge source="Weeklong" target="Overnight"/>
+<edge source="People" target="Staff"/>
+<edge source="People" target="Friends"/>
+<edge source="People" target="Student"/>
+<edge source="Staff" target="Learning"/>
+<edge source="Staff" target="Teaching"/>
+<edge source="Overnight" target="Dice"/>
+<edge source="Overnight" target="Lion King"/>
+<edge source="Dice" target="Student beat Student"/>
+<edge source="Soundview" target="Phragmites"/>
+<edge source="Presevation" target="Planting trees"/>
+<edge source="Planting trees" target="Deciduous"/>
+<edge source="Planting trees" target="Evergreen"/>
+<edge source="Plants" target="Evergreen"/>
+<edge source="Evergreen" target="ESP"/>
+<edge source="Evergreen" target="Knots"/>
+<edge source="Evergreen" target="Mudflats"/>
+<edge source="Evergreen" target="Low tide"/>
+</graph></graphml>

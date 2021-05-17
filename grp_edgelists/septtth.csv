@@ -1,76 +1,39 @@
-﻿Edge,Target,Month,Group
-Activities,Basketball,December,TTh
-Activities,Fishing,December,TTh
-Activities,Fun,December,TTh
-Activities,Games,December,TTh
-Activities,Rowing,December,TTh
-Activities,Science,December,TTh
-Activities,Swimming,December,TTh
-Activities,Teaching_Learning,December,TTh
-Activities,Water quality,December,TTh
-Swimming,YMCA,December,TTh
-YMCA,Coach Will,December,TTh
-Water Quality,Dissolved Oxygen,December,TTh
-Water Quality,Nitrates,December,TTh
-Water Quality,pH,December,TTh
-Water Quality,Salinity,December,TTh
-Water Quality,Turbidity,December,TTh
-Animals,Birds,December,TTh
-Animals,Fish,December,TTh
-Birds,Cormorants,December,TTh
-Birds,Ducks,December,TTh
-Birds,Egrets,December,TTh
-Bronx,BEC,December,TTh
-Bronx,Chopped cheese,December,TTh
-Bronx,Hunts Point,December,TTh
-Bronx,RTB,December,TTh
-Bronx,SM,December,TTh
-Bronx,Grant,December,TTh
-RTB,Family,December,TTh
-RTB,No purple or dark colors,December,TTh
-RTB,Weeklong,December,TTh
-Family,People,December,TTh
-People,Staff,December,TTh
-People,Friends,December,TTh
-People,Student,December,TTh
-Staff,Learning,December,TTh
-Staff,Teaching,December,TTh
-Weeklong,Overnight,December,TTh
-Overnight,Dice,December,TTh
-Overnight,Games,December,TTh
-Overnight,Lion King,December,TTh
-Dice,Student beat Student,December,TTh
-Places,Hunts point,December,TTh
-Places,Soundview,December,TTh
-Places,YMCA,December,TTh
-Soundview,Phragmites,December,TTh
-YMCA,Coach Will,December,TTh
-Preservation,Oysters,December,TTh
-Presevation,Planting trees,December,TTh
-Preservation,Plants,December,TTh
-Preservation,Removing invasives,December,TTh
-Planting trees,Deciduous,December,TTh
-Planting trees,Evergreen,December,TTh
-Plants,Alternate,December,TTh
-Plants,Opposite,December,TTh
-Plants,Photosynthesis,December,TTh
-Plants,Phragmites,December,TTh
-Safety,Boat Bag_Rope Bag,December,TTh
-Safety,PFDs,December,TTh
-Technical Skills,ESP,December,TTh
-Technical Skills,Job Skills,December,TTh
-Technical Skills,Water quality,December,TTh
-ESP,Knots,December,TTh
-ESP,LNT,December,TTh
-Knots,Bowline,December,TTh
-Things in the river,Boat,December,TTh
-Things in the river,Dirt,December,TTh
-Things in the river,Dock,December,TTh
-Things in the river,Mudflats,December,TTh
-Things in the river,Pollution,December,TTh
-Mudflats,Uggs,December,TTh
-Tides,High tide,December,TTh
-Tides,Low tide,December,TTh
-Low tide,Staff name,December,TTh
-Low tide,Stuck,December,TTh
-Low tide,Uggs,December,TTh
+﻿Edge,Target
+Bronx River,Rocks
+Bronx River,Trash
+Bronx River,Dirty
+Bronx River,Parts
+Bronx River,Docks
+Bronx River,Plants
+Bronx River,Memories
+Bronx River,Animals
+Bronx River,Communities
+Rocks,
+Trash,Random things
+Trash,Bottles
+Trash,Plastic bags
+Random things,Shoes
+Random things,Socks
+Dirty,
+Parts,Water
+Parts,Mud
+Water,Low tide
+Water,High tide
+Water,Rowing
+Mud,Mudflat
+Mud,Dirty shoes
+Docks,
+Plants,Trees
+Plants,Seaweed
+Trees,Branch
+Memories,Inside joke
+Animals,Birds
+Animals,Fish
+Animals,Crabs
+Birds,Blue heron
+Birds,Great Egret
+Birds,Cormorant
+Communities,Hunts Point
+Communities,People
+Communities,RTB
+Communities,Soundview
