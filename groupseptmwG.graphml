@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Bronx River"/>
+<node id="Happy place"/>
+<node id="Job"/>
+<node id="Low tide"/>
+<node id="Animals"/>
+<node id="People"/>
+<node id="Events"/>
+<node id="Friend"/>
+<node id="John"/>
+<node id="Parties"/>
+<node id="Experience"/>
+<node id="Info"/>
+<node id="Money"/>
+<node id="Work"/>
+<node id="Boots"/>
+<node id="Garbage"/>
+<node id="Mud"/>
+<node id="Crabs"/>
+<node id="Wading birds"/>
+<node id="Adam Green"/>
+<node id="Majora Carter"/>
+<node id="Boogie Down Grind"/>
+<node id="Greening the Ghetto"/>
+<node id="Hyde HS"/>
+<node id="Teacher Name"/>
+<node id="Torture"/>
+<node id="Pain"/>
+<node id="The sexy student"/>
+<node id="The ratchet student"/>
+<edge source="Bronx River" target="Happy place"/>
+<edge source="Bronx River" target="Job"/>
+<edge source="Bronx River" target="Low tide"/>
+<edge source="Bronx River" target="Animals"/>
+<edge source="Bronx River" target="People"/>
+<edge source="Happy place" target="Events"/>
+<edge source="Happy place" target="Friend"/>
+<edge source="Happy place" target="John"/>
+<edge source="Happy place" target="Parties"/>
+<edge source="Job" target="Experience"/>
+<edge source="Job" target="Info"/>
+<edge source="Job" target="Money"/>
+<edge source="Job" target="Work"/>
+<edge source="Low tide" target="Boots"/>
+<edge source="Low tide" target="Garbage"/>
+<edge source="Low tide" target="Mud"/>
+<edge source="Low tide" target="Animals"/>
+<edge source="Animals" target="Crabs"/>
+<edge source="Animals" target="Wading birds"/>
+<edge source="People" target="Adam Green"/>
+<edge source="People" target="Majora Carter"/>
+<edge source="People" target="The sexy student"/>
+<edge source="People" target="The ratchet student"/>
+<edge source="Majora Carter" target="Boogie Down Grind"/>
+<edge source="Majora Carter" target="Greening the Ghetto"/>
+<edge source="Majora Carter" target="Hyde HS"/>
+<edge source="Hyde HS" target="Teacher Name"/>
+<edge source="Hyde HS" target="Torture"/>
+<edge source="Hyde HS" target="Pain"/>
+</graph></graphml>

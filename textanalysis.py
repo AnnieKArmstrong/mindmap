@@ -17,3 +17,4 @@ grpmindmap_df = X.parse("Group list")
 #print(grpmindmap_df.describe(include='all'))
 
 grouped = mindmap_df.groupby("Month")["Target"]
+print(grouped)
