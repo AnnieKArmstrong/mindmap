@@ -1,178 +1,85 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Bronx River"/>
-<node id="Hunts Point"/>
-<node id="RTB"/>
-<node id="Soundview"/>
-<node id="Dirty"/>
-<node id="Bronx Zoo"/>
-<node id="Linzy Cried"/>
-<node id="I got to captain"/>
-<node id="Long Island Sound"/>
-<node id="Atlantic Ocean"/>
-<node id="Bronx"/>
-<node id="NYC"/>
-<node id="New York"/>
-<node id="United States"/>
-<node id="Chopped cheese"/>
-<node id="Basketball"/>
-<node id="Funny"/>
-<node id="Funny "/>
-<node id="People outside"/>
-<node id="Water"/>
-<node id="Boats"/>
-<node id="Fish"/>
-<node id="Blue-Crab"/>
-<node id="Blue crab"/>
-<node id="Friends"/>
-<node id="Sludgy waters"/>
-<node id="Pollution"/>
-<node id="Forgotten species"/>
-<node id="Marine wildlife"/>
-<node id="Cleaning"/>
-<node id="trash pickup"/>
-<node id="wetland boxes"/>
-<node id="Water quality"/>
-<node id="Birds"/>
-<node id="Swans"/>
-<node id="Great blue"/>
-<node id="Yellow night herons"/>
-<node id="Fishing"/>
-<node id="Shrimp"/>
-<node id="Eels"/>
-<node id="Sea horses"/>
-<node id="Plantains"/>
-<node id="Trips"/>
-<node id="Meeting wildlife"/>
-<node id="Frost Valley"/>
-<node id="Camping"/>
-<node id="Weeklong"/>
-<node id="Bear"/>
-<node id="Hiking"/>
-<node id="Falling"/>
-<node id="Climbing"/>
-<node id="Looking at different trees"/>
-<node id="Rowing"/>
-<node id="Music"/>
-<node id="Food"/>
-<node id="Sleepover"/>
-<node id="Plants"/>
-<node id="Performance levels"/>
-<node id="[]"/>
-<node id="[] "/>
-<node id="Bonds"/>
-<node id="Family"/>
 <node id="Emotions"/>
-<node id="Feelings/mood"/>
-<node id="Games"/>
-<node id="Crying"/>
-<node id="The River"/>
-<node id="Mouctar getting on my nerves"/>
-<node id="Trees"/>
-<node id="Christmas tree"/>
-<node id="Duck"/>
-<node id="Meat"/>
-<node id="Heron"/>
-<node id="Blossoms"/>
-<node id="Pink"/>
-<node id="Sewers"/>
-<node id="May"/>
-<node id="My birthday"/>
-<node id="Science"/>
-<node id="Pool"/>
-<node id="Decorations"/>
-<node id="Sharks"/>
-<node id="Boat flipping"/>
-<node id="Mines"/>
-<node id="&quot;Can I borrow your cat?&quot;"/>
-<edge source="Bronx River" target="Hunts Point"/>
-<edge source="Bronx River" target="Soundview"/>
-<edge source="Bronx River" target="Bronx Zoo"/>
-<edge source="Bronx River" target="Linzy Cried"/>
-<edge source="Bronx River" target="I got to captain"/>
-<edge source="Bronx River" target="Long Island Sound"/>
-<edge source="Bronx River" target="Bronx"/>
-<edge source="Bronx River" target="Water"/>
-<edge source="Bronx River" target="Sludgy waters"/>
-<edge source="Bronx River" target="Marine wildlife"/>
-<edge source="Bronx River" target="Cleaning"/>
-<edge source="Bronx River" target="Birds"/>
-<edge source="Bronx River" target="Fishing"/>
-<edge source="Bronx River" target="Trips"/>
-<edge source="Bronx River" target="Hiking"/>
-<edge source="Bronx River" target="Rowing"/>
-<edge source="Bronx River" target="Music"/>
-<edge source="Bronx River" target="Food"/>
-<edge source="Bronx River" target="Plants"/>
-<edge source="Bronx River" target="Water quality"/>
-<edge source="Bronx River" target="[]"/>
-<edge source="Bronx River" target="Family"/>
+<node id="People"/>
+<node id="Connections"/>
+<node id="Health"/>
+<node id="Places"/>
+<node id="Activities"/>
+<node id="Birdwatching"/>
+<node id="Things-in-water"/>
+<node id="Anxiety"/>
+<node id="Memories"/>
+<node id="Peace"/>
+<node id="Scared"/>
+<node id="Judgment"/>
+<node id="Find-yourself"/>
+<node id="Learn about your place"/>
+<node id="Getting on nerves"/>
+<node id="Family"/>
+<node id="Community members"/>
+<node id="NYC"/>
+<node id="RTB"/>
+<node id="Schools"/>
+<node id="Asthma"/>
+<node id="Pollution"/>
+<node id="CSO"/>
+<node id="Animals"/>
+<node id="Plants"/>
+<node id="Hunts point"/>
+<node id="Long Island Sound"/>
+<node id="Frost Valley"/>
+<node id="Atlantic Ocean"/>
+<node id="Turkey chases"/>
+<node id="Hiking"/>
+<node id="Weeklong"/>
+<node id="Cleaning the water"/>
+<node id="Rowing"/>
+<node id="Yellow night heron"/>
+<node id="Nasty"/>
+<node id="Water"/>
+<node id="Waves"/>
 <edge source="Bronx River" target="Emotions"/>
-<edge source="Bronx River" target="Games"/>
-<edge source="Bronx River" target="RTB"/>
-<edge source="Bronx River" target="The River"/>
-<edge source="Bronx River" target="Mouctar getting on my nerves"/>
-<edge source="Bronx River" target="Trees"/>
-<edge source="Bronx River" target="Fish"/>
-<edge source="Bronx River" target="Christmas tree"/>
-<edge source="Hunts Point" target="RTB"/>
-<edge source="Hunts Point" target="Chopped cheese"/>
-<edge source="Hunts Point" target="Basketball"/>
-<edge source="Hunts Point" target="Funny"/>
-<edge source="RTB" target="Blue crab"/>
-<edge source="RTB" target="Friends"/>
-<edge source="Soundview" target="Dirty"/>
-<edge source="Long Island Sound" target="Atlantic Ocean"/>
-<edge source="Bronx" target="NYC"/>
-<edge source="NYC" target="New York"/>
-<edge source="New York" target="United States"/>
-<edge source="Funny " target="People outside"/>
-<edge source="Water" target="Boats"/>
-<edge source="Water" target="Fish"/>
-<edge source="Water" target="Sewers"/>
-<edge source="Water" target="Water quality"/>
-<edge source="Water" target="Pool"/>
-<edge source="Boats" target="Blue-Crab"/>
-<edge source="Fish" target="Eels"/>
-<edge source="Fish" target="Sharks"/>
-<edge source="Blue crab" target="Fishing"/>
-<edge source="Friends" target="[] "/>
-<edge source="Friends" target="Bonds"/>
-<edge source="Friends" target="Family"/>
-<edge source="Sludgy waters" target="Pollution"/>
-<edge source="Sludgy waters" target="Forgotten species"/>
-<edge source="Cleaning" target="trash pickup"/>
-<edge source="Cleaning" target="wetland boxes"/>
-<edge source="Cleaning" target="Water quality"/>
-<edge source="Water quality" target="Performance levels"/>
-<edge source="Water quality" target="Science"/>
-<edge source="Birds" target="Swans"/>
-<edge source="Birds" target="Great blue"/>
-<edge source="Birds" target="Yellow night herons"/>
-<edge source="Birds" target="Duck"/>
-<edge source="Birds" target="Heron"/>
-<edge source="Fishing" target="Shrimp"/>
-<edge source="Fishing" target="Eels"/>
-<edge source="Fishing" target="Sea horses"/>
-<edge source="Fishing" target="Plantains"/>
-<edge source="Trips" target="Meeting wildlife"/>
-<edge source="Trips" target="Frost Valley"/>
-<edge source="Trips" target="Camping"/>
-<edge source="Trips" target="Weeklong"/>
-<edge source="Trips" target="Bear"/>
-<edge source="Trips" target="Hiking"/>
-<edge source="Trips" target="Sleepover"/>
-<edge source="Hiking" target="Falling"/>
-<edge source="Hiking" target="Climbing"/>
-<edge source="Hiking" target="Looking at different trees"/>
-<edge source="Rowing" target="Crying"/>
-<edge source="Emotions" target="Feelings/mood"/>
-<edge source="Games" target="Mines"/>
-<edge source="Games" target="&quot;Can I borrow your cat?&quot;"/>
-<edge source="Trees" target="Blossoms"/>
-<edge source="Christmas tree" target="Decorations"/>
-<edge source="Duck" target="Meat"/>
-<edge source="Blossoms" target="Pink"/>
-<edge source="Blossoms" target="May"/>
-<edge source="May" target="My birthday"/>
-<edge source="Sharks" target="Boat flipping"/>
+<edge source="Bronx River" target="People"/>
+<edge source="Bronx River" target="Connections"/>
+<edge source="Bronx River" target="Health"/>
+<edge source="Bronx River" target="Places"/>
+<edge source="Bronx River" target="Activities"/>
+<edge source="Bronx River" target="Birdwatching"/>
+<edge source="Bronx River" target="Things-in-water"/>
+<edge source="Emotions" target="Anxiety"/>
+<edge source="Emotions" target="Memories"/>
+<edge source="Emotions" target="Peace"/>
+<edge source="Emotions" target="Scared"/>
+<edge source="Emotions" target="Judgment"/>
+<edge source="People" target="Find-yourself"/>
+<edge source="People" target="Learn about your place"/>
+<edge source="People" target="Getting on nerves"/>
+<edge source="People" target="Family"/>
+<edge source="People" target="Connections"/>
+<edge source="People" target="Memories"/>
+<edge source="People" target="Community members"/>
+<edge source="People" target="NYC"/>
+<edge source="Connections" target="RTB"/>
+<edge source="Health" target="Asthma"/>
+<edge source="Health" target="Pollution"/>
+<edge source="Places" target="Hunts point"/>
+<edge source="Places" target="Long Island Sound"/>
+<edge source="Places" target="NYC"/>
+<edge source="Places" target="Frost Valley"/>
+<edge source="Places" target="Atlantic Ocean"/>
+<edge source="Activities" target="Turkey chases"/>
+<edge source="Activities" target="Hiking"/>
+<edge source="Activities" target="Weeklong"/>
+<edge source="Activities" target="Birdwatching"/>
+<edge source="Activities" target="Cleaning the water"/>
+<edge source="Activities" target="Rowing"/>
+<edge source="Birdwatching" target="Yellow night heron"/>
+<edge source="Things-in-water" target="Nasty"/>
+<edge source="Things-in-water" target="Water"/>
+<edge source="Things-in-water" target="Waves"/>
+<edge source="RTB" target="Schools"/>
+<edge source="Pollution" target="CSO"/>
+<edge source="Pollution" target="Animals"/>
+<edge source="Pollution" target="Plants"/>
 </graph></graphml>

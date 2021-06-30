@@ -1,170 +1,135 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Bronx River"/>
-<node id="Family"/>
-<node id="Water quality"/>
-<node id="Birding"/>
-<node id="Fishing"/>
-<node id="Rowing"/>
-<node id="PA1"/>
-<node id="PA2"/>
-<node id="PA3"/>
-<node id="PA4"/>
-<node id="SummerStudent1"/>
-<node id="SummerStudent2"/>
-<node id="SummerStudent3"/>
-<node id="SummerStudent4"/>
-<node id="SummerStudent5"/>
-<node id="SummerStudent6"/>
-<node id="SummerStudent7"/>
-<node id="SummerStudent8"/>
-<node id="Mallard"/>
-<node id="Canada goose"/>
-<node id="Great egret"/>
-<node id="Snowy egret"/>
-<node id="Black crowned night heron"/>
-<node id="Yellow night herons"/>
-<node id="Shiners"/>
-<node id="Crabs"/>
-<node id="Jellyfish"/>
-<node id="Captain"/>
-<node id="Pace"/>
-<node id="Power"/>
-<node id="Boat cleaning (not fun)"/>
-<node id="Tide"/>
-<node id="High tide"/>
-<node id="Low tide"/>
-<node id="Muddy"/>
-<node id="Turbidity"/>
-<node id="Nitrates"/>
-<node id="Dissolved Oxygen"/>
-<node id="Salinity"/>
-<node id="Temperature"/>
-<node id="pH"/>
+<node id="Activities"/>
 <node id="Animals"/>
-<node id="Water"/>
-<node id="Trash"/>
-<node id="Plants"/>
-<node id="Shrimp"/>
-<node id="Fish"/>
+<node id="Bronx"/>
+<node id="Places"/>
+<node id="Preservation"/>
+<node id="Safety"/>
+<node id="Technical Skills"/>
+<node id="Things in the river"/>
+<node id="Tides"/>
+<node id="Basketball"/>
+<node id="Fishing"/>
+<node id="Fun"/>
+<node id="Games"/>
+<node id="Rowing"/>
+<node id="Science"/>
+<node id="Swimming"/>
+<node id="Teaching_Learning"/>
+<node id="Water quality"/>
+<node id="YMCA"/>
+<node id="Coach Will"/>
+<node id="Dissolved Oxygen"/>
+<node id="Nitrates"/>
+<node id="pH"/>
+<node id="Salinity"/>
+<node id="Turbidity"/>
 <node id="Birds"/>
-<node id="Bottles"/>
-<node id="Paper"/>
-<node id="Plastic bags"/>
-<node id="Clothes"/>
-<node id="Shoes"/>
-<node id="Socks"/>
-<node id="Seaweed"/>
-<node id="Trees"/>
-<node id="Boats"/>
-<node id="Do people enjoy the bronx River?"/>
-<node id="How long has it been around?"/>
-<node id="Community"/>
-<node id="Not sanitized"/>
-<node id="Fishes"/>
-<node id="Do people outside the Bronx know about it?"/>
-<node id="Big Space"/>
+<node id="Fish"/>
+<node id="Cormorants"/>
+<node id="Ducks"/>
+<node id="Egrets"/>
+<node id="BEC"/>
+<node id="Chopped cheese"/>
+<node id="Hunts Point"/>
+<node id="RTB"/>
+<node id="SM"/>
+<node id="Grant"/>
+<node id="Family"/>
+<node id="No purple or dark colors"/>
+<node id="Weeklong"/>
 <node id="People"/>
-<node id="Park"/>
-<node id="Kayaking"/>
-<node id="Flowers"/>
-<node id="Sun"/>
-<node id="Big space"/>
-<node id="Ghetto"/>
-<node id="Dirty"/>
-<node id="Random things"/>
-<node id="Beautiful landscape"/>
-<node id="Rocks"/>
-<node id="Dock"/>
-<node id="Mudflat"/>
-<node id="Mud"/>
-<node id="My shoes getting dirty"/>
-<edge source="Bronx River" target="Family"/>
-<edge source="Bronx River" target="Water quality"/>
-<edge source="Bronx River" target="Birding"/>
-<edge source="Bronx River" target="Fishing"/>
-<edge source="Bronx River" target="Rowing"/>
+<node id="Staff"/>
+<node id="Friends"/>
+<node id="Student"/>
+<node id="Learning"/>
+<node id="Teaching"/>
+<node id="Overnight"/>
+<node id="Dice"/>
+<node id="Lion King"/>
+<node id="Student beat Student"/>
+<node id="Hunts point"/>
+<node id="Soundview"/>
+<node id="Phragmites"/>
+<node id="Oysters"/>
+<node id="Presevation"/>
+<node id="Planting trees"/>
+<node id="Plants"/>
+<node id="Removing invasives"/>
+<node id="Deciduous"/>
+<node id="Evergreen"/>
+<node id="ESP"/>
+<node id="Knots"/>
+<node id="Mudflats"/>
+<node id="Low tide"/>
+<edge source="Bronx River" target="Activities"/>
 <edge source="Bronx River" target="Animals"/>
-<edge source="Bronx River" target="Water"/>
-<edge source="Bronx River" target="Trash"/>
-<edge source="Bronx River" target="Plants"/>
-<edge source="Bronx River" target="Boats"/>
-<edge source="Bronx River" target="Do people enjoy the bronx River?"/>
-<edge source="Bronx River" target="How long has it been around?"/>
-<edge source="Bronx River" target="Community"/>
-<edge source="Bronx River" target="Not sanitized"/>
-<edge source="Bronx River" target="Do people outside the Bronx know about it?"/>
-<edge source="Bronx River" target="Birds"/>
-<edge source="Bronx River" target="Big Space"/>
-<edge source="Bronx River" target="People"/>
-<edge source="Bronx River" target="Dirty"/>
-<edge source="Bronx River" target="Crabs"/>
-<edge source="Bronx River" target="Fish"/>
-<edge source="Bronx River" target="Random things"/>
-<edge source="Bronx River" target="Beautiful landscape"/>
-<edge source="Bronx River" target="Rocks"/>
-<edge source="Bronx River" target="Dock"/>
-<edge source="Bronx River" target="Mudflat"/>
-<edge source="Bronx River" target="Mud"/>
-<edge source="Family" target="PA1"/>
-<edge source="Family" target="PA2"/>
-<edge source="Family" target="PA3"/>
-<edge source="Family" target="PA4"/>
-<edge source="Family" target="SummerStudent1"/>
-<edge source="Family" target="SummerStudent2"/>
-<edge source="Family" target="SummerStudent3"/>
-<edge source="Family" target="SummerStudent4"/>
-<edge source="Family" target="SummerStudent5"/>
-<edge source="Family" target="SummerStudent6"/>
-<edge source="Family" target="SummerStudent7"/>
-<edge source="Family" target="SummerStudent8"/>
-<edge source="Water quality" target="Turbidity"/>
-<edge source="Water quality" target="Nitrates"/>
-<edge source="Water quality" target="Dissolved Oxygen"/>
-<edge source="Water quality" target="Salinity"/>
-<edge source="Water quality" target="Temperature"/>
-<edge source="Water quality" target="pH"/>
-<edge source="Birding" target="Mallard"/>
-<edge source="Birding" target="Canada goose"/>
-<edge source="Birding" target="Great egret"/>
-<edge source="Birding" target="Black crowned night heron"/>
-<edge source="Fishing" target="Shiners"/>
-<edge source="Fishing" target="Crabs"/>
-<edge source="Fishing" target="Jellyfish"/>
-<edge source="Rowing" target="Captain"/>
-<edge source="Rowing" target="Pace"/>
-<edge source="Rowing" target="Power"/>
-<edge source="Rowing" target="Boat cleaning (not fun)"/>
-<edge source="Rowing" target="Tide"/>
-<edge source="Rowing" target="High tide"/>
-<edge source="Rowing" target="Low tide"/>
-<edge source="Great egret" target="Snowy egret"/>
-<edge source="Black crowned night heron" target="Yellow night herons"/>
-<edge source="Crabs" target="Animals"/>
-<edge source="Crabs" target="Fishes"/>
-<edge source="High tide" target="Water"/>
-<edge source="Low tide" target="Muddy"/>
-<edge source="Low tide" target="Water"/>
-<edge source="Animals" target="Shrimp"/>
-<edge source="Animals" target="Fish"/>
+<edge source="Bronx River" target="Bronx"/>
+<edge source="Bronx River" target="Places"/>
+<edge source="Bronx River" target="Preservation"/>
+<edge source="Bronx River" target="Safety"/>
+<edge source="Bronx River" target="Technical Skills"/>
+<edge source="Bronx River" target="Things in the river"/>
+<edge source="Bronx River" target="Tides"/>
+<edge source="Activities" target="Basketball"/>
+<edge source="Activities" target="Fishing"/>
+<edge source="Activities" target="Fun"/>
+<edge source="Activities" target="Games"/>
+<edge source="Activities" target="Rowing"/>
+<edge source="Activities" target="Science"/>
+<edge source="Activities" target="Swimming"/>
+<edge source="Activities" target="Teaching_Learning"/>
+<edge source="Activities" target="Water quality"/>
 <edge source="Animals" target="Birds"/>
-<edge source="Animals" target="Fishes"/>
-<edge source="Water" target="Fishes"/>
-<edge source="Water" target="Boats"/>
-<edge source="Trash" target="Bottles"/>
-<edge source="Trash" target="Paper"/>
-<edge source="Trash" target="Plastic bags"/>
-<edge source="Trash" target="Clothes"/>
-<edge source="Plants" target="Seaweed"/>
-<edge source="Plants" target="Trees"/>
-<edge source="Plants" target="Flowers"/>
-<edge source="Plants" target="Sun"/>
-<edge source="Birds" target="People"/>
-<edge source="Clothes" target="Shoes"/>
-<edge source="Clothes" target="Socks"/>
-<edge source="Trees" target="Flowers"/>
-<edge source="Boats" target="Kayaking"/>
-<edge source="People" target="Park"/>
-<edge source="Big space" target="Ghetto"/>
-<edge source="Big space" target="Dirty"/>
-<edge source="Mud" target="My shoes getting dirty"/>
+<edge source="Animals" target="Fish"/>
+<edge source="Bronx" target="BEC"/>
+<edge source="Bronx" target="Chopped cheese"/>
+<edge source="Bronx" target="Hunts Point"/>
+<edge source="Bronx" target="RTB"/>
+<edge source="Bronx" target="SM"/>
+<edge source="Bronx" target="Grant"/>
+<edge source="Places" target="Hunts point"/>
+<edge source="Places" target="Soundview"/>
+<edge source="Places" target="YMCA"/>
+<edge source="Preservation" target="Oysters"/>
+<edge source="Preservation" target="Plants"/>
+<edge source="Preservation" target="Removing invasives"/>
+<edge source="Safety" target="Evergreen"/>
+<edge source="Technical Skills" target="Evergreen"/>
+<edge source="Things in the river" target="Evergreen"/>
+<edge source="Tides" target="Evergreen"/>
+<edge source="Games" target="Overnight"/>
+<edge source="Swimming" target="YMCA"/>
+<edge source="Water quality" target="Dissolved Oxygen"/>
+<edge source="Water quality" target="Nitrates"/>
+<edge source="Water quality" target="pH"/>
+<edge source="Water quality" target="Salinity"/>
+<edge source="Water quality" target="Turbidity"/>
+<edge source="YMCA" target="Coach Will"/>
+<edge source="Birds" target="Cormorants"/>
+<edge source="Birds" target="Ducks"/>
+<edge source="Birds" target="Egrets"/>
+<edge source="RTB" target="Family"/>
+<edge source="RTB" target="No purple or dark colors"/>
+<edge source="RTB" target="Weeklong"/>
+<edge source="Family" target="People"/>
+<edge source="Weeklong" target="Overnight"/>
+<edge source="People" target="Staff"/>
+<edge source="People" target="Friends"/>
+<edge source="People" target="Student"/>
+<edge source="Staff" target="Learning"/>
+<edge source="Staff" target="Teaching"/>
+<edge source="Overnight" target="Dice"/>
+<edge source="Overnight" target="Lion King"/>
+<edge source="Dice" target="Student beat Student"/>
+<edge source="Soundview" target="Phragmites"/>
+<edge source="Presevation" target="Planting trees"/>
+<edge source="Planting trees" target="Deciduous"/>
+<edge source="Planting trees" target="Evergreen"/>
+<edge source="Plants" target="Evergreen"/>
+<edge source="Evergreen" target="ESP"/>
+<edge source="Evergreen" target="Knots"/>
+<edge source="Evergreen" target="Mudflats"/>
+<edge source="Evergreen" target="Low tide"/>
 </graph></graphml>

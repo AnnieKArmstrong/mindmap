@@ -1,182 +1,60 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Bronx River"/>
-<node id="Rat"/>
-<node id="Cat"/>
-<node id="LaGuardia"/>
-<node id="6 Train"/>
-<node id="Pelham Bay Park"/>
-<node id="Time Square"/>
-<node id="Mall"/>
-<node id="RTB"/>
-<node id="Adam Green"/>
-<node id="Bronx River Alliance"/>
-<node id="Hunts Point"/>
-<node id="Majora Carter"/>
-<node id="Hyde"/>
-<node id="Bronx River Parkway"/>
-<node id="Jacobi Hospital"/>
-<node id="Bronx River "/>
-<node id="Brother Islands"/>
-<node id="Fishing"/>
-<node id="Falling"/>
-<node id="Wet"/>
-<node id="Crabs"/>
-<node id="?"/>
-<node id="Park"/>
-<node id="Fun"/>
-<node id="People"/>
-<node id="Birding"/>
-<node id="Site seeing"/>
-<node id="Rowing"/>
-<node id="Kayaking"/>
-<node id="Scared"/>
-<node id="Swaying"/>
-<node id="Creatures"/>
-<node id="Eels"/>
-<node id="Fish"/>
-<node id="Starfish"/>
-<node id="Pain"/>
-<node id="Riverside"/>
-<node id="Water"/>
-<node id="Dirty"/>
-<node id="Creatures dying out"/>
-<node id="Views"/>
-<node id="Views "/>
-<node id="Music"/>
-<node id="In my bag"/>
-<node id="Happens all the time"/>
-<node id="Dead bodies"/>
-<node id="Dangerous"/>
-<node id="Leaving Bronx"/>
-<node id="College?"/>
-<node id="Peace Corps"/>
-<node id="Cleaning"/>
-<node id="Avoiding"/>
-<node id="My mom"/>
-<node id="Community"/>
-<node id="New friends"/>
-<node id="Photos"/>
-<node id="Cameras"/>
-<node id="Vegan"/>
-<node id="Meat"/>
-<node id="Food"/>
-<node id="I'm always hungry"/>
-<node id="Money"/>
+<node id="Happy place"/>
 <node id="Job"/>
-<node id="Saving"/>
-<node id="Afterschool"/>
-<node id="School"/>
-<node id="Depression &amp; Stress"/>
-<node id="Solutions"/>
-<node id="Concluding"/>
-<node id="Environmental"/>
-<node id="Hands hurt"/>
-<node id="Getting wet"/>
-<node id="Smells"/>
-<node id="Crotona"/>
-<node id="Antics"/>
-<node id="Soundview"/>
-<node id="Bronx"/>
-<node id="Projects"/>
-<node id="Ew"/>
-<node id="Starlight Park"/>
-<node id="Bronx Zoo"/>
-<node id="Sad animals"/>
-<node id="Walking"/>
-<node id="Birds"/>
-<node id="I'm a bird"/>
+<node id="Low tide"/>
 <node id="Animals"/>
-<edge source="Bronx River" target="Rat"/>
-<edge source="Bronx River" target="LaGuardia"/>
-<edge source="Bronx River" target="6 Train"/>
-<edge source="Bronx River" target="RTB"/>
-<edge source="Bronx River" target="Hunts Point"/>
-<edge source="Bronx River" target="Bronx River Parkway"/>
-<edge source="Bronx River" target="Fishing"/>
-<edge source="Bronx River" target="Park"/>
-<edge source="Bronx River" target="Fun"/>
-<edge source="Bronx River" target="Birding"/>
-<edge source="Bronx River" target="Rowing"/>
-<edge source="Bronx River" target="Creatures"/>
-<edge source="Bronx River" target="Majora Carter"/>
-<edge source="Bronx River" target="Water"/>
-<edge source="Bronx River" target="Views"/>
-<edge source="Bronx River" target="Dead bodies"/>
-<edge source="Bronx River" target="Dirty"/>
-<edge source="Bronx River" target="Community"/>
-<edge source="Bronx River" target="Fish"/>
-<edge source="Bronx River" target="Crotona"/>
-<edge source="Bronx River" target="Soundview"/>
-<edge source="Rat" target="Cat"/>
-<edge source="6 Train" target="Pelham Bay Park"/>
-<edge source="6 Train" target="Time Square"/>
-<edge source="Pelham Bay Park" target="Mall"/>
-<edge source="RTB" target="Adam Green"/>
-<edge source="RTB" target="Bronx River Alliance"/>
-<edge source="RTB" target="Afterschool"/>
-<edge source="RTB" target="Environmental"/>
-<edge source="RTB" target="Birds"/>
-<edge source="Adam Green" target="Hunts Point"/>
-<edge source="Hunts Point" target="Majora Carter"/>
-<edge source="Hunts Point" target="Hyde"/>
-<edge source="Hunts Point" target="Soundview"/>
-<edge source="Hunts Point" target="Projects"/>
-<edge source="Majora Carter" target="Hyde"/>
-<edge source="Majora Carter" target="Riverside"/>
-<edge source="Hyde" target="Pain"/>
-<edge source="Bronx River Parkway" target="Jacobi Hospital"/>
-<edge source="Bronx River " target="Brother Islands"/>
-<edge source="Fishing" target="Falling"/>
-<edge source="Fishing" target="Wet"/>
-<edge source="Fishing" target="Crabs"/>
-<edge source="Fishing" target="Vegan"/>
-<edge source="Crabs" target="?"/>
-<edge source="Crabs" target="Creatures"/>
-<edge source="Fun" target="People"/>
-<edge source="Birding" target="Site seeing"/>
-<edge source="Rowing" target="Kayaking"/>
-<edge source="Rowing" target="Environmental"/>
-<edge source="Rowing" target="Hands hurt"/>
-<edge source="Kayaking" target="Scared"/>
-<edge source="Kayaking" target="Swaying"/>
-<edge source="Creatures" target="Eels"/>
-<edge source="Creatures" target="Fish"/>
-<edge source="Creatures" target="Starfish"/>
-<edge source="Water" target="Dirty"/>
-<edge source="Water" target="Creatures dying out"/>
-<edge source="Dirty" target="Cleaning"/>
-<edge source="Views " target="Music"/>
-<edge source="Music" target="In my bag"/>
-<edge source="Music" target="Antics"/>
-<edge source="In my bag" target="Happens all the time"/>
-<edge source="Dead bodies" target="Dangerous"/>
-<edge source="Dangerous" target="Leaving Bronx"/>
-<edge source="Leaving Bronx" target="College?"/>
-<edge source="College?" target="Peace Corps"/>
-<edge source="Cleaning" target="Avoiding"/>
-<edge source="Avoiding" target="My mom"/>
-<edge source="Community" target="New friends"/>
-<edge source="Community" target="Photos"/>
-<edge source="Photos" target="Cameras"/>
-<edge source="Vegan" target="Meat"/>
-<edge source="Meat" target="Food"/>
-<edge source="Food" target="I'm always hungry"/>
-<edge source="I'm always hungry" target="Money"/>
-<edge source="Money" target="Job"/>
-<edge source="Money" target="Saving"/>
-<edge source="Afterschool" target="School"/>
-<edge source="School" target="Depression &amp; Stress"/>
-<edge source="Depression &amp; Stress" target="Solutions"/>
-<edge source="Solutions" target="Concluding"/>
-<edge source="Hands hurt" target="Getting wet"/>
-<edge source="Getting wet" target="Smells"/>
-<edge source="Crotona" target="Antics"/>
-<edge source="Soundview" target="Bronx"/>
-<edge source="Soundview" target="Bronx Zoo"/>
-<edge source="Projects" target="Ew"/>
-<edge source="Projects" target="Starlight Park"/>
-<edge source="Bronx Zoo" target="Sad animals"/>
-<edge source="Sad animals" target="Walking"/>
-<edge source="Birds" target="I'm a bird"/>
-<edge source="I'm a bird" target="Animals"/>
+<node id="People"/>
+<node id="Events"/>
+<node id="Friend"/>
+<node id="John"/>
+<node id="Parties"/>
+<node id="Experience"/>
+<node id="Info"/>
+<node id="Money"/>
+<node id="Work"/>
+<node id="Boots"/>
+<node id="Garbage"/>
+<node id="Mud"/>
+<node id="Crabs"/>
+<node id="Wading birds"/>
+<node id="Adam Green"/>
+<node id="Majora Carter"/>
+<node id="Boogie Down Grind"/>
+<node id="Greening the Ghetto"/>
+<node id="Hyde HS"/>
+<node id="Teacher Name"/>
+<node id="Torture"/>
+<node id="Pain"/>
+<node id="The sexy student"/>
+<node id="The ratchet student"/>
+<edge source="Bronx River" target="Happy place"/>
+<edge source="Bronx River" target="Job"/>
+<edge source="Bronx River" target="Low tide"/>
+<edge source="Bronx River" target="Animals"/>
+<edge source="Bronx River" target="People"/>
+<edge source="Happy place" target="Events"/>
+<edge source="Happy place" target="Friend"/>
+<edge source="Happy place" target="John"/>
+<edge source="Happy place" target="Parties"/>
+<edge source="Job" target="Experience"/>
+<edge source="Job" target="Info"/>
+<edge source="Job" target="Money"/>
+<edge source="Job" target="Work"/>
+<edge source="Low tide" target="Boots"/>
+<edge source="Low tide" target="Garbage"/>
+<edge source="Low tide" target="Mud"/>
+<edge source="Low tide" target="Animals"/>
+<edge source="Animals" target="Crabs"/>
+<edge source="Animals" target="Wading birds"/>
+<edge source="People" target="Adam Green"/>
+<edge source="People" target="Majora Carter"/>
+<edge source="People" target="The sexy student"/>
+<edge source="People" target="The ratchet student"/>
+<edge source="Majora Carter" target="Boogie Down Grind"/>
+<edge source="Majora Carter" target="Greening the Ghetto"/>
+<edge source="Majora Carter" target="Hyde HS"/>
+<edge source="Hyde HS" target="Teacher Name"/>
+<edge source="Hyde HS" target="Torture"/>
+<edge source="Hyde HS" target="Pain"/>
 </graph></graphml>
