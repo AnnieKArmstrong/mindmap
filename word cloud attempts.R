@@ -66,11 +66,13 @@ ind_el <- read.csv("~/Github/mindmap/grp-edgelist.csv", fileEncoding = "UTF-8-BO
 #Use the fileEncoding because it was importing with a funny character before the first 
 #column name
 
+##September Individual Mindmaps
+
 el<- dplyr::select(ind_el, Edge, Target, Month, Group, QualitativeCode)
 MW<- filter(el, Group == "MW", Month == "September")
 
-freqMW<-as.data.frame(table(MW)) # Create an edge weight column named "Freq"
 
+freqMW<-as.data.frame(table(MW)) # Create an edge weight column named "Freq"
 freqMW<-subset(freqMW,Freq>0) # Delete all the edges having weight equal to 0
 freqMW
 
@@ -78,13 +80,15 @@ g=graph.data.frame(freqMW)
 g<- get.adjacency(g, sparse=FALSE)
 g
 
+
 MW_Sept_Ind <- graph_from_adjacency_matrix(g)
-plot(MW_Sept_Ind)
+plot(MW_Sept_Ind, directed = FALSE)
 
 gsize(MW_Sept_Ind)
 gorder(MW_Sept_Ind)
 
-#Nodelist
+
+#MW Individual Nodelist, September
 
 V(MW_Sept_Ind)
 E(MW_Sept_Ind)
@@ -93,7 +97,128 @@ E(MW_Sept_Ind)
 edge_density(MW_Sept_Ind)
 
 set.seed(1001)
-pal<-brewer.pal(length(MW_Sept_Ind$QualitativeCode), "Set2")
-plot(MW_Sept_Ind, edge.arrow.size=.3, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
-     vertex.label.dist=1, vertex.size = 5, vertex.color=pal[as.numeric(as.factor(vertex_attr(MW_Sept_Ind, "QualitativeCode")))],
+code <- MW_Sept_Ind$QualitativeCode
+pal<-brewer.pal(length(code), "Spectral")
+
+plot(MW_Sept_Ind, directed = FALSE, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
+     vertex.label.dist=1, vertex.size = 5, vertex.color=freqMW$QualitativeCode,
      layout = layout.davidson.harel)
+legend('topleft', legend=levels(QualitativeCode), fill=pal, border=NA)
+     
+
+#Tuesday Thursday Individual, September
+
+TTH <- filter(el, Group == "TTh", Month == "September")
+
+freqTTh<-as.data.frame(table(TTH))
+freqTTh<-subset(freqTTh,Freq>0)
+freqTTh
+
+gTTh=graph.data.frame(freqTTh)
+gTTh<-get.adjacency(gTTh, sparse=FALSE)
+
+TTh_Sept_Ind <-graph_from_adjacency_matrix(gTTh)
+plot(TTh_Sept_Ind)
+
+V(TTh_Sept_Ind)
+E(MW_Sept_Ind)
+
+#Network Density
+edge_density(TTh_Sept_Ind)
+
+#pal2<-brewer.pal(length(TTh_Sept_Ind$QualitativeCode), "Set2")
+plot(TTh_Sept_Ind, edge.arrow.size = .3,
+     vertex.label.dist=1,
+     vertex.size = freqTTh$Freq*3,
+     vertex.color=freqTTh$Freq,
+     layout = layout.davidson.harel)
+
+##December Individual Mind Maps
+
+el<- dplyr::select(ind_el, Edge, Target, Month, Group, QualitativeCode)
+DecMW<- filter(el, Group == "MW", Month == "December")
+
+freqDecMW<-as.data.frame(table(DecMW)) # Create an edge weight column named "Freq"
+freqDecMW<-subset(freqDecMW,Freq>0) # Delete all the edges having weight equal to 0
+freqDecMW
+
+g=graph.data.frame(freqDecMW)
+g<- get.adjacency(g, sparse=FALSE)
+g
+
+MW_Dec_Ind <- graph_from_adjacency_matrix(g)
+plot(MW_Dec_Ind, directed = FALSE)
+
+gsize(MW_Dec_Ind)
+gorder(MW_Dec_Ind)
+
+V(MW_Dec_Ind)
+E(MW_Dec_Ind)
+
+#Network Density
+edge_density(MW_Dec_Ind)
+
+MW_Dec_IndDeg <-degree(MW_Dec_Ind, mode=c("All"))
+V(MW_Dec_Ind)$degree<-MW_Dec_IndDeg
+V(MW_Dec_Ind)$degree
+which.max(alumnet)
+V
+set.seed(1001)
+code <- MW_Dec_Ind$QualitativeCode
+pal<-brewer.pal(length(code), "Spectral")
+
+plot(MW_Dec_Ind, directed = FALSE, edge.arrow.size=.2,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
+     vertex.label.dist=1, vertex.size = MW_Dec_IndDeg, vertex.color="coral",
+     layout = layout.davidson.harel)
+
+legend('topleft', legend=levels(freqDecMW$QualitativeCode), fill=pal, border=NA)
+
+##December TTh individual maps
+
+DecTTh <- filter(el, Group == "TTh", Month == "December")
+
+freqDecTTh<-as.data.frame(table(DecTTh))
+freqDecTTh<-subset(freqTTh,Freq>0)
+freqDecTTh
+
+gTTh=graph.data.frame(freqDecTTh)
+gTTh<-get.adjacency(gTTh, sparse=FALSE)
+
+TTh_Dec_Ind <-graph_from_adjacency_matrix(gTTh)
+plot(TTh_Dec_Ind)
+
+V(TTh_Dec_Ind)
+E(TTh_Dec_Ind)
+
+#Network Density
+edge_density(TTh_Dec_Ind)
+
+#Degree Centrality
+TThDecInd <-degree(TTh_Dec_Ind, mode=c("All"))
+V(TTh_Dec_Ind)$degree<-TThDecInd
+V(TTh_Dec_Ind)$degree
+which.max(alumnet)
+V
+
+#Plot
+pal2<-brewer.pal(15,"Set3")
+plot(TTh_Dec_Ind, directed = FALSE, edge.arrow.size = .3,
+     vertex.label.dist=1,
+     vertex.size = TThDecInd,
+     vertex.color="cornflower blue",
+     edge.color = "Black",
+     layout = layout.davidson.harel)
+
+
+#iHstogram of Code Frequencies
+qualcode<-table(DecTTh$QualitativeCode)
+qualcode<-as.data.frame(qualcode)
+
+p<-ggplot(data = qualcode, mapping = aes(x = reorder(Var1, Freq), y = Freq, fill= Freq ))+
+        geom_bar(stat = "identity") 
+        
+p <- p + coord_flip() + scale_fill_distiller(palette = "Purples") +
+        xlab("Code Frequency") + ylab("Qualitative Code")
+p
+
+RColorBrewer::brewer.pal           
