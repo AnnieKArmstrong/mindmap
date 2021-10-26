@@ -211,14 +211,61 @@ plot(TTh_Dec_Ind, directed = FALSE, edge.arrow.size = .3,
 
 
 #iHstogram of Code Frequencies
-qualcode<-table(DecTTh$QualitativeCode)
+
+##Tuesday THursday Comparisons
+
+TThQualCode <- select(el, Month, Group, QualitativeCode)
+TThQualCode<- filter(TThQualCode, Group == "TTh")
+
+qualcode<-table(TThQualCode)
+qualcode<-table($QualitativeCode)
 qualcode<-as.data.frame(qualcode)
 
+q<- ggplot(data = qualcode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill = Month))+
+        geom_col(position="dodge")
+q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+
 p<-ggplot(data = qualcode, mapping = aes(x = reorder(Var1, Freq), y = Freq, fill= Freq ))+
-        geom_bar(stat = "identity") 
+        geom_col(stat = "identity") 
         
 p <- p + coord_flip() + scale_fill_distiller(palette = "Purples") +
         xlab("Code Frequency") + ylab("Qualitative Code")
 p
 
-RColorBrewer::brewer.pal           
+##Monday Wednesday Comparisons
+MWQualCode <-select(el, Month, Group, QualitativeCode)
+MWQualCode <- filter(MWQualCode, Group == "MW")
+
+MWQualCode<-table(MWQualCode)
+qualcode2<-as.data.frame(MWQualCode)
+class(qualcode2)
+
+q <- ggplot(data = qualcode2, aes(x=reorder(QualitativeCode,Freq), y=Freq,fill=Month))+
+        geom_col(position="dodge")
+q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+
+##Comparing both groups -- September
+
+AllQualCode <-select(el, Month, Group, QualitativeCode)
+AllQualCode <-filter(AllQualCode, Month == "September")
+
+AllQualCode <- table(AllQualCode)
+AllCode<-as.data.frame(AllQualCode)
+
+a <- ggplot(data=AllCode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill=Group))+
+        geom_col(position="dodge")
+a + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+
+##Comparing Both Groups -- December
+
+AllQualCode <-select(el, Month, Group, QualitativeCode)
+AllQualCode <-filter(AllQualCode, Month == "December")
+
+AllQualCode <- table(AllQualCode)
+AllCode<-as.data.frame(AllQualCode)
+
+a <- ggplot(data=AllCode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill=Group))+
+        geom_col(position="dodge")
+a + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+
+
