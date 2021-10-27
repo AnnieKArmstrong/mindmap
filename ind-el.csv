@@ -110,11 +110,11 @@ Bronx River,Hunts Point,December,MW,6MW,Returner,Places,,,1,12
 Hunts Point,Chopped cheese,December,MW,6MW,Returner,Culture,,Positive,12,462
 Hunts Point,Basketball,December,MW,6MW,Returner,Fun,,Positive,12,463
 Hunts Point,Funny,December,MW,6MW,Returner,Fun,,Positive,12,464
-Funny ,People outside,December,MW,6MW,Returner,Fun,,Positive,112,465
+Funny,People outside,December,MW,6MW,Returner,Fun,,Positive,112,465
 Bronx River,Water,December,MW,6MW,Returner,Water,,,1,42
-Water,Boats,December,MW,6MW,Returner,Boats,,,42,116
 Water,Fish,December,MW,6MW,Returner,Animals,,,42,349
-Boats,Blue-Crab,December,MW,6MW,Returner,Animals,,,116,469
+Water,Boats,December,MW,6MW,Returner,Boats,,,42,116
+Boats,Blue crab,December,MW,6MW,Returner,Animals,,,116,469
 Blue crab,RTB,December,MW,6MW,Returner,Animals,,,117,9
 RTB,Friends,December,MW,6MW,Returner,Friends,,Positive,9,159
 Bronx River,Sludgy waters,December,MW,7MW,New,Pollution,,Negative,1,120

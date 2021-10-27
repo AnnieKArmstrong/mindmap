@@ -1,3 +1,7 @@
+
+# Libraries and Packages --------------------------------------------------
+
+
 #install.packages("wordcloud")
 library(wordcloud)
 
@@ -20,12 +24,32 @@ library(ggplot2)
 
 #install.packages("SnowballC")
 library(SnowballC)
-
+library(tidyverse)
 library(igraph)
 library(tidygraph)
 library(RColorBrewer)
 library(tidyr)
 library(dplyr)
+install.packages("data.table")
+library(data.table)
+
+#install.packages("GGally")
+library(GGally)
+
+#install.packages("formattable")
+library(formattable)
+
+#install.packages("reactable")
+library(reactable)
+
+
+# Custom Colors -----------------------------------------------------------
+
+customGreen0 = "#DeF7E9"
+
+customGreen = "#71CA97"
+
+customRed = "#ff7f7f"
 
 # Word Clouds -------------------------------------------------------------
 
@@ -61,7 +85,7 @@ wordcloud2(data = df, size = .25, minSize = 0, gridSize =  0,
 # Some Data Wrangling -----------------------------------------------------
 ind_el <- read.csv("~/Github/mindmap/ind-el.csv", fileEncoding = "UTF-8-BOM")
 el_ID<-ind_el%>%
-        select(Source, Target, Month, Group, StudentStatus, QualitativeCode)
+        select(Source, Target, Month, Group, StudentStatus, QualitativeCode, Student)
 
 tibble::rowid_to_column(ind_el, "Id")
 
@@ -76,37 +100,157 @@ nodes2<-nodes %>%
 write.csv(nodes2, "~/Github/mindmap/ind_nodes.csv") #nodes with id
 write.csv()
 
-#Get distinct targets
-targets <- el %>%
-        distinct(Target, .keep_all = FALSE)
-
-#Join the data to create node list
-
-nodes <- full_join(sources, targets,  by = "Id")
 
 # Individual Maps ---------------------------------------------------------
 
-MW_2 <-dplyr::select(ind_el, Edge, Target, Month, Group, 
-                     QualitativeCode, StudentStatus, StudentID)
-MW_2 <- filter(MW_2, StudentID == "2MW", Month == "September")
+MW_2 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
 
-g=graph.data.frame(MW_2)
-g<- get.adjacency(g, sparse=FALSE)
+MW_2Sept <- filter(MW_2, Student == "2MW", Month == "September")
+MW_2Dec <- filter(MW_2, Student == "2MW", Month == "December")
+
+
+
+i <-dplyr::select(MW_2, Month, QualitativeCode, Student)
+f <- filter(i, Student == "2MW")
+
+f2<-table(f$QualitativeCode, f$Month)
+f3<- as.data.frame(f2)
+
+p <- pivot_wider(f3, id_cols = NULL, names_from = Var2, values_from = Freq)
+p <- rename(p, Code = Var1)
+p<- p %>% select(order(colnames(p), decreasing = TRUE))
+
+formattable(p)
+formattable(p, align = c("l", "c", "c"),
+                         "Var1" = formatter("span", style = ~style(color="grey",
+                         font.weight="bold")),
+                        'December' = color_tile(customGreen,customGreen0),
+                        'September' = color_tile(customGreen,customGreen0))
+
+reactable(
+        f,
+        columns = list(
+                
+        )
+        
+)
+
+
+#g<- get.adjacency(g, sparse=FALSE)
+
+
+
+#MW_2_Graph<- graph_from_adjacency_matrix(g)
+
+col <- data.frame(QualitativeCode = unique(MW_2$QualitativeCode), stringsAsFactors = F)
+col$color <- brewer.pal(nrow(col), "Set3")
+MW_2$color <-col$color[match(MW_2$QualitativeCode, col$QualitativeCode)]
+
+
+g <- graph_from_data_frame(MW_2Sept, directed = FALSE)
 g
 
-MW_2_Graph<- graph_from_adjacency_matrix(g)
-plot(MW_2_Graph, directed = FALSE)
+g2<- graph_from_data_frame(MW_2Dec, directed = FALSE)
+g2
 
-plot(MW_2_Graph, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=0.4,
-     vertex.label.dist=1, vertex.size = 5, vertex.color= 
-     layout = layout.reingold.tilford)
+vertex.attributes(g)
 
-#col <- data.frame(QualitativeCode = unique(MW_2$QualitativeCode), stringsAsFactors = F)
-#col$color <- brewer.pal(nrow(col), "Set3")
-#MW_2$color <-col$color[match(MW_2$QualitativeCode, col$QualitativeCode)]
+pal<-brewer.pal(length(MW_2$QualitativeCode), "Set3")
+
+plot(g, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "coral", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+write_graph(MW_2_Graph, "~/Github/mindmap/Individual maps/2mw.graphml", "edgelist")
+
 
 MW_2_graph2 <- graph_from_adjacency_matrix(g)
 plot(MW_2_graph2, directed = FALSE, vertex.color ="Sky Blue", layout = layout.circle)
+
+
+# MW3 Individual Maps -----------------------------------------------------
+
+MW_3 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
+MW_3Sept <- filter(MW_3, Student == "3MW", Month == "September")
+MW_3Dec <- filter(MW_3, Student == "3MW", Month == "December")
+
+
+
+g <- graph_from_data_frame(MW_3Sept, directed = FALSE)
+g
+
+g2<- graph_from_data_frame(MW_3Dec, directed = FALSE)
+g2
+
+plot(g, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "coral", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+
+# MW4 Individual Maps -----------------------------------------------------
+
+MW_4 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
+MW_4Sept <- filter(MW_4, Student == "4MW", Month == "September")
+MW_4Dec <- filter(MW_4, Student == "4MW", Month == "December")
+
+g <- graph_from_data_frame(MW_4Sept, directed = FALSE)
+g
+
+g2<- graph_from_data_frame(MW_4Dec, directed = FALSE)
+g2
+
+plot(g, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "coral", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+
+# MW5 Individual Maps -----------------------------------------------------
+
+MW_5 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
+MW_5Sept <- filter(MW_5, Student == "5MW", Month == "September")
+#No December Graph,since the student didn't come in December
+
+g <- graph_from_data_frame(MW_5Sept, directed = FALSE)
+g
+
+
+plot(g, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "coral", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+
+# MW6 Individual Maps -----------------------------------------------------
+
+#No September Graph,since the student didn't come in September
+
+MW_6 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
+MW_6Dec <- filter(MW_6, Student == "6MW", Month == "December")
+
+g2<- graph_from_data_frame(MW_6Dec, directed = FALSE)
+g2
+
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
 
 # MW September Individual Mind Maps -------------------------------------------------
 
