@@ -29,7 +29,6 @@ library(dplyr)
 
 # Word Clouds -------------------------------------------------------------
 
-
 ##Defining the Team
 df <- read.csv("~/Github/mindmap/teamcodes.csv", head = TRUE)
 na.omit(df)
@@ -59,16 +58,65 @@ wordcloud2(data = df, size = .25, minSize = 0, gridSize =  0,
            widgetsize = NULL, figPath = NULL, hoverFunction = NULL)
 
 
+# Some Data Wrangling -----------------------------------------------------
+ind_el <- read.csv("~/Github/mindmap/ind-el.csv", fileEncoding = "UTF-8-BOM")
+el_ID<-ind_el%>%
+        select(Source, Target, Month, Group, StudentStatus, QualitativeCode)
 
-# Mind Map Network Graphs -------------------------------------------------
+tibble::rowid_to_column(ind_el, "Id")
 
-ind_el <- read.csv("~/Github/mindmap/grp-edgelist.csv", fileEncoding = "UTF-8-BOM")
+el<- dplyr::select(ind_el, Source, Target)
+
+d1<-data.frame(source=unlist(el_ID, use.names=FALSE))
+nodes <- tibble::rowid_to_column(d1, "Id")
+
+nodes2<-nodes %>%
+        distinct(source, .keep_all = TRUE)
+
+write.csv(nodes2, "~/Github/mindmap/ind_nodes.csv") #nodes with id
+write.csv()
+
+#Get distinct targets
+targets <- el %>%
+        distinct(Target, .keep_all = FALSE)
+
+#Join the data to create node list
+
+nodes <- full_join(sources, targets,  by = "Id")
+
+# Individual Maps ---------------------------------------------------------
+
+MW_2 <-dplyr::select(ind_el, Edge, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, StudentID)
+MW_2 <- filter(MW_2, StudentID == "2MW", Month == "September")
+
+g=graph.data.frame(MW_2)
+g<- get.adjacency(g, sparse=FALSE)
+g
+
+MW_2_Graph<- graph_from_adjacency_matrix(g)
+plot(MW_2_Graph, directed = FALSE)
+
+plot(MW_2_Graph, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=0.4,
+     vertex.label.dist=1, vertex.size = 5, vertex.color= 
+     layout = layout.reingold.tilford)
+
+#col <- data.frame(QualitativeCode = unique(MW_2$QualitativeCode), stringsAsFactors = F)
+#col$color <- brewer.pal(nrow(col), "Set3")
+#MW_2$color <-col$color[match(MW_2$QualitativeCode, col$QualitativeCode)]
+
+MW_2_graph2 <- graph_from_adjacency_matrix(g)
+plot(MW_2_graph2, directed = FALSE, vertex.color ="Sky Blue", layout = layout.circle)
+
+# MW September Individual Mind Maps -------------------------------------------------
+
+ind_el <- read.csv("~/Github/mindmap/ind-el.csv", fileEncoding = "UTF-8-BOM")
 #Use the fileEncoding because it was importing with a funny character before the first 
 #column name
 
-##September Individual Mindmaps
+dplyr::select(ind_el, Edge, Target, Month, Group, 
+              QualitativeCode, StudentStatus, StudentID)
 
-el<- dplyr::select(ind_el, Edge, Target, Month, Group, QualitativeCode)
 MW<- filter(el, Group == "MW", Month == "September")
 
 
@@ -101,16 +149,20 @@ code <- MW_Sept_Ind$QualitativeCode
 pal<-brewer.pal(length(code), "Spectral")
 
 plot(MW_Sept_Ind, directed = FALSE, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
-     vertex.label.dist=1, vertex.size = 5, vertex.color=freqMW$QualitativeCode,
+     vertex.label.dist=1, vertex.size = 5, vertex.color=freqMW$StudentStatus,
      layout = layout.davidson.harel)
-legend('topleft', legend=levels(QualitativeCode), fill=pal, border=NA)
+legend('topleft', legend=levels(freqMW$StudentStatus), fill=pal, border=NA)
      
 
-#Tuesday Thursday Individual, September
 
-TTH <- filter(el, Group == "TTh", Month == "September")
+# TTh September Individual Mindmaps ---------------------------------------
 
-freqTTh<-as.data.frame(table(TTH))
+ind_el <- read.csv("~/Github/mindmap/ind-el.csv", fileEncoding = "UTF-8-BOM")
+el<- dplyr::select(ind_el, Edge, Target, Month, Group, QualitativeCode, StudentStatus)
+TTh<- filter(el, Group == "TTh", Month == "September")
+
+
+freqTTh<-as.data.frame(table(TTh))
 freqTTh<-subset(freqTTh,Freq>0)
 freqTTh
 
@@ -121,21 +173,20 @@ TTh_Sept_Ind <-graph_from_adjacency_matrix(gTTh)
 plot(TTh_Sept_Ind)
 
 V(TTh_Sept_Ind)
-E(MW_Sept_Ind)
+E(TTh_Sept_Ind)
 
 #Network Density
 edge_density(TTh_Sept_Ind)
 
-#pal2<-brewer.pal(length(TTh_Sept_Ind$QualitativeCode), "Set2")
 plot(TTh_Sept_Ind, edge.arrow.size = .3,
      vertex.label.dist=1,
-     vertex.size = freqTTh$Freq*3,
-     vertex.color=freqTTh$Freq,
+     vertex.size = 5,
+     vertex.color=freqTTh$StudentStatus,
      layout = layout.davidson.harel)
 
-##December Individual Mind Maps
+# December MW Individual Mind Maps ----------------------------------------
 
-el<- dplyr::select(ind_el, Edge, Target, Month, Group, QualitativeCode)
+el<- dplyr::select(ind_el, Edge, Target, Month, Group, QualitativeCode, StudentStatus)
 DecMW<- filter(el, Group == "MW", Month == "December")
 
 freqDecMW<-as.data.frame(table(DecMW)) # Create an edge weight column named "Freq"
@@ -167,18 +218,19 @@ set.seed(1001)
 code <- MW_Dec_Ind$QualitativeCode
 pal<-brewer.pal(length(code), "Spectral")
 
-plot(MW_Dec_Ind, directed = FALSE, edge.arrow.size=.2,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
-     vertex.label.dist=1, vertex.size = MW_Dec_IndDeg, vertex.color="coral",
+plot(MW_Dec_Ind, directed = FALSE, edge.arrow.size=.2,edge.width=freqDecMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
+     vertex.label.dist=1, vertex.size = 5, vertex.color=freqDecMW$StudentStatus,
      layout = layout.davidson.harel)
 
 legend('topleft', legend=levels(freqDecMW$QualitativeCode), fill=pal, border=NA)
 
-##December TTh individual maps
 
+# December TTh Individual Mind Maps ---------------------------------------
+el<- dplyr::select(ind_el, Edge, Target, Month, Group, QualitativeCode, StudentStatus)
 DecTTh <- filter(el, Group == "TTh", Month == "December")
 
 freqDecTTh<-as.data.frame(table(DecTTh))
-freqDecTTh<-subset(freqTTh,Freq>0)
+freqDecTTh<-subset(freqDecTTh,Freq>0)
 freqDecTTh
 
 gTTh=graph.data.frame(freqDecTTh)
@@ -204,13 +256,84 @@ V
 pal2<-brewer.pal(15,"Set3")
 plot(TTh_Dec_Ind, directed = FALSE, edge.arrow.size = .3,
      vertex.label.dist=1,
-     vertex.size = TThDecInd,
-     vertex.color="cornflower blue",
+     vertex.size = 5,
+     vertex.color=freqDecTTh$StudentStatus,
      edge.color = "Black",
      layout = layout.davidson.harel)
 
 
-#iHstogram of Code Frequencies
+# Group Mind Map -- MW September ------------------------------------------
+grp_el <-read.csv("~/Github/mindmap/group-el.csv", fileEncoding = "UTF-8-BOM")
+
+el<- dplyr::select(grp_el, Edge, Target, Month, Group, QualitativeCode)
+MW<- filter(el, Group == "MW", Month == "September")
+
+freqMW<-as.data.frame(table(MW)) # Create an edge weight column named "Freq"
+freqMW<-subset(freqMW,Freq>0) # Delete all the edges having weight equal to 0
+freqMW
+
+g=graph.data.frame(freqMW)
+g<- get.adjacency(g, sparse=FALSE)
+g
+
+
+MW_Sept_Grp <- graph_from_adjacency_matrix(g)
+plot(MW_Sept_Grp, directed = FALSE)
+
+gsize(MW_Sept_Grp)
+gorder(MW_Sept_Grp)
+
+V(MW_Sept_Grp)
+E(MW_Sept_Grp)
+
+#Network Density
+edge_density(MW_Sept_Grp)
+
+set.seed(1001)
+code <- MW_Sept_Grp$QualitativeCode
+pal<-brewer.pal(length(code), "Spectral")
+
+q<-plot(MW_Sept_Grp, directed = FALSE, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
+     vertex.label.dist=1, vertex.size = 5, vertex.color="Purple",
+     layout = layout.davidson.harel)
+
+
+# Tuesday Thursday September Group Map ------------------------------------
+
+el<- dplyr::select(grp_el, Edge, Target, Month, Group, QualitativeCode)
+TTh<- filter(el, Group == "TTh", Month == "September")
+
+freqTTh<-as.data.frame(table(TTh)) # Create an edge weight column named "Freq"
+freqTTh<-subset(freqTTh,Freq>0) # Delete all the edges having weight equal to 0
+freqTTh
+
+g=graph.data.frame(freqTTh)
+g<- get.adjacency(g, sparse=FALSE)
+g
+
+
+TTh_Sept_Grp <- graph_from_adjacency_matrix(g)
+plot(TTh_Sept_Grp, directed = FALSE)
+
+gsize(TTh_Sept_Grp)
+gorder(TTh_Sept_Grp)
+
+V(TTh_Sept_Grp)
+E(TTh_Sept_Grp)
+
+#Network Density
+edge_density(TTh_Sept_Grp)
+
+set.seed(1001)
+code <- MW_Sept_Grp$QualitativeCode
+pal<-brewer.pal(length(code), "Spectral")
+
+q<-plot(TTh_Sept_Grp, directed = FALSE, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
+        vertex.label.dist=1, vertex.size = 5, vertex.color="SkyBlue",
+        layout = layout.davidson.harel)
+
+# Code Frequency Comparisons -- Mind Maps ---------------------------------
+
 
 ##Tuesday THursday Comparisons
 
@@ -256,9 +379,27 @@ a <- ggplot(data=AllCode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill=Grou
         geom_col(position="dodge")
 a + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
 
+##Comparing Both Groups -- September
+
+grp_el <-read.csv("~/Github/mindmap/group-el.csv", fileEncoding = "UTF-8-BOM")
+
+AllQualCode <-select(grp_el, Month, Group, QualitativeCode)
+AllQualCode <-filter(AllQualCode, Month == "September")
+
+AllQualCode <- table(AllQualCode)
+AllCode<-as.data.frame(AllQualCode)
+
+a <- ggplot(data=AllCode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill=Group))+
+        geom_col(position="dodge")
+a + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")+ 
+        labs(title="Group Mind Map Code Frequencies", 
+             subtitle = "September 2019")
+
 ##Comparing Both Groups -- December
 
-AllQualCode <-select(el, Month, Group, QualitativeCode)
+grp_el <-read.csv("~/Github/mindmap/group-el.csv", fileEncoding = "UTF-8-BOM")
+
+AllQualCode <-select(grp_el, Month, Group, QualitativeCode)
 AllQualCode <-filter(AllQualCode, Month == "December")
 
 AllQualCode <- table(AllQualCode)
@@ -266,6 +407,9 @@ AllCode<-as.data.frame(AllQualCode)
 
 a <- ggplot(data=AllCode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill=Group))+
         geom_col(position="dodge")
-a + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+a + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency") + 
+        labs(title="Group Mind Map Code Frequencies", 
+        subtitle = "December 2019")
+
 
 

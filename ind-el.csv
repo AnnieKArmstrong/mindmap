@@ -1,0 +1,354 @@
+﻿Source,Target,Month,Group,Student,StudentStatus,QualitativeCode,QualitativeCode2,Valence,SourceID,TargetID
+Bronx River,Rat,September,MW,1MW,Returner,Animals,,Negative,1,2
+Rat,Cat,September,MW,1MW,Returner,Animals,,,2,355
+Bronx River,LaGuardia,September,MW,2MW,New,Places,,,1,356
+Bronx River,6 Train,September,MW,2MW,New,Transportation,,,1,5
+6 Train,Pelham Bay Park,September,MW,2MW,New,Places,,,5,7
+6 Train,Time Square,September,MW,2MW,New,Places,,,5,359
+Pelham Bay Park,Mall,September,MW,2MW,New,Places,,,7,360
+Bronx River,RTB,September,MW,2MW,New,Places,,,1,9
+RTB,Adam Green,September,MW,2MW,New,People,,,9,362
+RTB,Bronx River Alliance,September,MW,2MW,New,RTB,,,9,363
+Bronx River,Hunts Point,September,MW,2MW,New,Places,,,1,12
+Hunts Point,Majora Carter,September,MW,2MW,New,People,,,12,38
+Hunts Point,Hyde,September,MW,2MW,New,School,,,12,39
+Hunts Point,Adam Green,September,MW,2MW,New,People,,,12,362
+Bronx River,Bronx River Parkway,September,MW,2MW,New,Transportation,,,1,16
+Bronx River Parkway,Jacobi Hospital,September,MW,2MW,New,Institutions,,,16,369
+Bronx River Parkway,Brother Islands,September,MW,2MW,New,Places,,,16,370
+Bronx River,Fishing,September,MW,3MW,Returner,Nature Activities,,,1,19
+Fishing,Falling,September,MW,3MW,Returner,Nature Activities,Scary experience,Negative,19,372
+Fishing,Wet,September,MW,3MW,Returner,Nature Activities,Uncomfortable experience,Negative,19,373
+Fishing,Crabs,September,MW,3MW,Returner,Nature Activities,Bronx river animals,,19,22
+Crabs,?,September,MW,3MW,Returner,Animals,,,22,375
+Bronx River,Park,September,MW,3MW,Returner,Places,,,1,376
+Bronx River,Fun,September,MW,3MW,Returner,Fun,,Positive,1,25
+Fun,People,September,MW,3MW,Returner,People,,Positive,25,245
+Bronx River,Birding,September,MW,3MW,Returner,Activities,,,1,27
+Birding,Site seeing,September,MW,3MW,Returner,Activities,Exploring Sites,Positive,27,380
+Bronx River,Rowing,September,MW,3MW,Returner,Boats,,Positive,1,29
+Rowing,Kayaking,September,MW,3MW,Returner,Boats,,,29,30
+Kayaking,Scared,September,MW,3MW,Returner,Boats,Scary experience,Negative,30,383
+Kayaking,Swaying,September,MW,3MW,Returner,Boats,Scary experience,,30,384
+Bronx River,Creatures,September,MW,4MW,New,Animals,,,1,33
+Creatures,Eels,September,MW,4MW,New,Animals,,,33,386
+Creatures,Fish,September,MW,4MW,New,Animals,,,33,349
+Creatures,Starfish,September,MW,4MW,New,Animals,,,33,388
+Creatures,Crabs,September,MW,4MW,New,Animals,,,33,22
+Bronx River,Majora Carter,September,MW,4MW,New,People,,,1,38
+Majora Carter,Hyde,September,MW,4MW,New,School,,,38,39
+Hyde,Pain,September,MW,4MW,New,School,Negative emotions,Negative,39,392
+Majora Carter,Riverside,September,MW,4MW,New,People,Places,,38,393
+Bronx River,Water,September,MW,4MW,New,Water,,,1,42
+Water,Dirty,September,MW,4MW,New,Water,Dirty,Negative,42,54
+Water,Creatures dying out,September,MW,4MW,New,Water,Bronx river animals,Positive,42,396
+Bronx River,Views,September,MW,5MW,New,Nice sites,,Positive,1,397
+Views ,Music,September,MW,5MW,New,Nice sites,Music,,45,46
+Music,In my bag,September,MW,5MW,New,Music,,,46,47
+In my bag,Happens all the time,September,MW,5MW,New,Stream of consciousness,,,47,400
+Bronx River,Dead bodies,September,MW,5MW,New,Death,,Negative,1,49
+Dead bodies,Dangerous,September,MW,5MW,New,Death,Danger,Negative,49,50
+Dangerous,Leaving Bronx,September,MW,5MW,New,Danger,Want to leave,,50,51
+Leaving Bronx,College?,September,MW,5MW,New,Want to leave,How to leave,,51,52
+College?,Peace Corps,September,MW,5MW,New,How to leave,,,52,405
+Bronx River,Dirty,September,MW,5MW,New,Dirty,,Negative,1,54
+Dirty,Cleaning,September,MW,5MW,New,Dirty,Cleaning,,54,55
+Cleaning,Avoiding,September,MW,5MW,New,Stream of consciousness,,,55,56
+Avoiding,My mom,September,MW,5MW,New,Family,,,56,409
+Bronx River,Community,September,MW,5MW,New,Community,,Positive,1,58
+Community,New friends,September,MW,5MW,New,Community,New friends,Positive,58,411
+Community,Photos,September,MW,5MW,New,Activities,,,58,60
+Photos,Cameras,September,MW,5MW,New,Activities,,,60,413
+Bronx River,Fish,September,MW,5MW,New,Bronx River animals,,,1,349
+Fishing,Vegan,September,MW,5MW,New,Activities,,,19,63
+Vegan,Meat,September,MW,5MW,New,Food,,,63,64
+Meat,Food,September,MW,5MW,New,Food,,,64,65
+Food,I'm always hungry,September,MW,5MW,New,Hunger,,,65,66
+I'm always hungry,Money,September,MW,5MW,New,Poverty,,,66,67
+Money,Job,September,MW,5MW,New,Money,,,67,420
+Money,Saving,September,MW,5MW,New,Money,,,67,421
+Bronx River,RTB,September,MW,5MW,New,Institutions,,,1,9
+RTB,Afterschool,September,MW,5MW,New,Institutions,After school,,9,71
+Afterschool,School,September,MW,5MW,New,Institutions,,,71,72
+School,Depression & Stress,September,MW,5MW,New,School,Negative emotions,,72,73
+Depression & Stress,Solutions,September,MW,5MW,New,Emotions,Solutions,,73,74
+Solutions,Concluding,September,MW,5MW,New,Stream of consciousness,,,74,427
+RTB,Environmental,September,MW,5MW,New,RTB Group,ESP,,9,76
+Environmental,Rowing,September,MW,5MW,New,RTB Group,Boats,,76,29
+Rowing,Hands hurt,September,MW,5MW,New,Boats,Hands hurt,Blend,29,78
+Hands hurt,Getting wet,September,MW,5MW,New,Physical experience,,Blend,78,79
+Getting wet,Smells,September,MW,5MW,New,Physical experience,,Negative,79,432
+Bronx River,Crotona,September,MW,5MW,New,Places,,,1,81
+Crotona,Antics,September,MW,5MW,New,Places,Fun,Positive,81,82
+Antics,Music,September,MW,5MW,New,Music,,,82,46
+Bronx River,Soundview,September,MW,5MW,New,Places,,,1,84
+Soundview,Hunts Point,September,MW,5MW,New,Places,,,84,12
+Soundview,Bronx,September,MW,5MW,New,Places,,,84,105
+Hunts Point,Projects,September,MW,5MW,New,Places,,,12,87
+Projects,Ew,September,MW,5MW,New,Places,,Negative,87,440
+Projects,Starlight Park,September,MW,5MW,New,Places,,Negative,87,441
+Soundview,Bronx Zoo,September,MW,5MW,New,Places,,Negative,84,90
+Bronx Zoo,Sad animals,September,MW,5MW,New,Places,,Negative,90,91
+Sad animals,Walking,September,MW,5MW,New,Animals,,,91,444
+RTB,Birds,September,MW,5MW,New,Animals,,,9,93
+Birds,I'm a bird,September,MW,5MW,New,Animals,,,93,94
+I'm a bird,Animals,September,MW,5MW,New,Animals,,,94,216
+Bronx River,Hunts Point,December,MW,4MW,New,Places,,,1,12
+Hunts Point,RTB,December,MW,4MW,New,Places,,,12,9
+Bronx River,Soundview,December,MW,4MW,New,Places,,,1,84
+Soundview,Dirty,December,MW,4MW,New,Places,Dirty,Negative,84,54
+Bronx River,Bronx Zoo,December,MW,4MW,New,Places,,,1,90
+Bronx River,Linzy Cried,December,MW,4MW,New,Teasing student,,,1,453
+Bronx River,I got to captain,December,MW,4MW,New,Skills,,Positive,1,454
+Bronx River,Long Island Sound,December,MW,4MW,New,Places,,,1,103
+Long Island Sound,Atlantic Ocean,December,MW,4MW,New,Places,,,103,456
+Bronx River,Bronx,December,MW,4MW,New,Places,,,1,105
+Bronx,NYC,December,MW,4MW,New,Places,,,105,106
+NYC,New York,December,MW,4MW,New,Places,,,106,107
+New York,United States,December,MW,4MW,New,Places,,,107,460
+Bronx River,Hunts Point,December,MW,6MW,Returner,Places,,,1,12
+Hunts Point,Chopped cheese,December,MW,6MW,Returner,Culture,,Positive,12,462
+Hunts Point,Basketball,December,MW,6MW,Returner,Fun,,Positive,12,463
+Hunts Point,Funny,December,MW,6MW,Returner,Fun,,Positive,12,464
+Funny ,People outside,December,MW,6MW,Returner,Fun,,Positive,112,465
+Bronx River,Water,December,MW,6MW,Returner,Water,,,1,42
+Water,Boats,December,MW,6MW,Returner,Boats,,,42,116
+Water,Fish,December,MW,6MW,Returner,Animals,,,42,349
+Boats,Blue-Crab,December,MW,6MW,Returner,Animals,,,116,469
+Blue crab,RTB,December,MW,6MW,Returner,Animals,,,117,9
+RTB,Friends,December,MW,6MW,Returner,Friends,,Positive,9,159
+Bronx River,Sludgy waters,December,MW,7MW,New,Pollution,,Negative,1,120
+Sludgy waters,Pollution,December,MW,7MW,New,Pollution,,Negative,120,312
+Sludgy waters,Forgotten species,December,MW,7MW,New,Animals,,Negative,120,474
+Bronx River,Marine wildlife,December,MW,7MW,New,Environmental action,,Positive,1,475
+Bronx River,Cleaning,December,MW,1MW,Returner,Environmental action,,Positive,1,55
+Cleaning,trash pickup,December,MW,1MW,Returner,Environmental action,,Positive,55,477
+Cleaning,wetland boxes,December,MW,1MW,Returner,Environmental action,,Positive,55,478
+Cleaning,Water quality,December,MW,1MW,Returner,Environmental action,,Positive,55,156
+Bronx River,Birds,December,MW,1MW,Returner,Animals,Identified,,1,93
+Birds,Swans,December,MW,1MW,Returner,Animals,Identified,,93,481
+Birds,Great blue,December,MW,1MW,Returner,Animals,Identified,,93,482
+Birds,Yellow night herons,December,MW,1MW,Returner,Animals,Identified,,93,483
+Bronx River,Fishing,December,MW,1MW,Returner,Activities,,,1,19
+Fishing,Shrimp,December,MW,1MW,Returner,Animals,,,19,485
+Fishing,Eels,December,MW,1MW,Returner,Animals,,,19,386
+Fishing,Sea horses,December,MW,1MW,Returner,Animals,,,19,487
+Fishing,Blue crab,December,MW,1MW,Returner,Animals,,,19,117
+Fishing,Plantains,December,MW,1MW,Returner,Animals,,,19,489
+Bronx River,Trips,December,MW,1MW,Returner,Activities,,Positive,1,138
+Trips,Meeting wildlife,December,MW,1MW,Returner,Activities,,Positive,138,491
+Trips,Frost Valley,December,MW,1MW,Returner,Activities,,Positive,138,492
+Trips,Camping,December,MW,1MW,Returner,Activities,,Positive,138,493
+Trips,Weeklong,December,MW,1MW,Returner,Activities,,Positive,138,494
+Trips,Bear,December,MW,1MW,Returner,Activities,Animals,,138,495
+Bronx River,Hiking,December,MW,1MW,Returner,Activities,,,1,144
+Hiking,Falling,December,MW,1MW,Returner,Activities,,,144,372
+Hiking,Climbing,December,MW,1MW,Returner,Activities,,,144,498
+Hiking,Looking at different trees,December,MW,1MW,Returner,Activities,,,144,499
+Bronx River,Rowing,December,MW,3MW,Returner,Rowing,,,1,29
+Bronx River,Trips,December,MW,3MW,Returner,Activities,,Positive,1,138
+Trips,Hiking,December,MW,3MW,Returner,Activities,,,138,144
+Bronx River,Music,December,MW,3MW,Returner,Culture,,,1,46
+Bronx River,Food,December,MW,3MW,Returner,Culture,,,1,65
+Trips,Sleepover,December,MW,3MW,Returner,Activities,,Positive,138,505
+Bronx River,Birds,December,MW,3MW,Returner,Animals,,,1,93
+Bronx River,Plants,December,MW,3MW,Returner,Plants,,,1,226
+Bronx River,Water quality,December,MW,3MW,Returner,Environmental action,,,1,156
+Water quality,Performance levels,December,MW,3MW,Returner,Skills,,,156,509
+Bronx River,[],December,MW,3MW,Returner,,,,1,510
+[] ,Friends,December,MW,3MW,Returner,Friendship,,Positive,158,159
+Friends,Bonds,December,MW,3MW,Returner,Friendship,,Positive,159,512
+Bronx River,Family,December,MW,3MW,Returner,Friendship,,Positive,1,161
+Family,Friends,December,MW,3MW,Returner,Friendship,,Positive,161,159
+Bronx River,Emotions,December,MW,3MW,Returner,Emotions,,,1,163
+Emotions,Feelings/mood,December,MW,3MW,Returner,Emotions,,Blend,163,516
+Bronx River,Games,December,MW,3MW,Returner,Activities,,,1,352
+Bronx River,Rowing,December,MW,8MW,Returner,Rowing,,,1,29
+Rowing,Crying,December,MW,8MW,Returner,Rowing,,Negative,29,519
+Bronx River,Trips,December,MW,8MW,Returner,Activities,,Positive,1,138
+Bronx River,RTB,December,MW,8MW,Returner,RTB,,,1,9
+Bronx River,The River,December,MW,8MW,Returner,The River,,,1,522
+Bronx River,Birds,December,MW,8MW,Returner,Animals,,,1,93
+Bronx River,Mouctar getting on my nerves,December,MW,8MW,Returner,Friends,,Negative,1,524
+Bronx River,Family,September,TTh,9TTh,Returner,Friends,,,1,161
+Bronx River,Water quality,September,TTh,9TTh,Returner,Environmental action,,,1,156
+Bronx River,Birding,September,TTh,9TTh,Returner,Activities,,,1,27
+Bronx River,Fishing,September,TTh,9TTh,Returner,Activities,,,1,19
+Bronx River,Rowing,September,TTh,9TTh,Returner,Rowing,,,1,29
+Family,PA1,September,TTh,9TTh,Returner,People,Staff,Positive,161,530
+Family,PA2,September,TTh,9TTh,Returner,People,Staff,Positive,161,531
+Family,PA3,September,TTh,9TTh,Returner,People,Staff,Positive,161,532
+Family,PA4,September,TTh,9TTh,Returner,People,Staff,Positive,161,533
+Family,SummerStudent1,September,TTh,9TTh,Returner,People,Friends,Positive,161,534
+Family,SummerStudent2,September,TTh,9TTh,Returner,People,Friends,Positive,161,535
+Family,SummerStudent3,September,TTh,9TTh,Returner,People,Friends,Positive,161,536
+Family,SummerStudent4,September,TTh,9TTh,Returner,People,Friends,Positive,161,537
+Family,SummerStudent5,September,TTh,9TTh,Returner,People,Friends,Positive,161,538
+Family,SummerStudent6,September,TTh,9TTh,Returner,People,Friends,Positive,161,539
+Family,SummerStudent7,September,TTh,9TTh,Returner,People,Friends,Positive,161,540
+Family,SummerStudent8,September,TTh,9TTh,Returner,People,Friends,Positive,161,541
+Birding,Mallard,September,TTh,9TTh,Returner,Animals,Birds,,27,542
+Birding,Canada goose,September,TTh,9TTh,Returner,Animals,Birds,,27,543
+Birding,Great egret,September,TTh,9TTh,Returner,Animals,Birds,,27,192
+Great egret,Snowy egret,September,TTh,9TTh,Returner,Animals,Birds,,192,545
+Birding,Black crowned night heron,September,TTh,9TTh,Returner,Animals,Birds,,27,194
+Black crowned night heron,Yellow night herons,September,TTh,9TTh,Returner,Animals,Birds,,194,483
+Fishing,Shiners,September,TTh,9TTh,Returner,Animals,Fish,,19,548
+Fishing,Crabs,September,TTh,9TTh,Returner,Animals,Fish,,19,22
+Fishing,Jellyfish,September,TTh,9TTh,Returner,Animals,Fish,,19,550
+Rowing,Captain,September,TTh,9TTh,Returner,Boats,Skills,,29,551
+Rowing,Pace,September,TTh,9TTh,Returner,Boats,Skills,,29,552
+Rowing,Power,September,TTh,9TTh,Returner,Boats,Skills,,29,553
+Rowing,Boat cleaning (not fun),September,TTh,9TTh,Returner,Chores,,Negative,29,554
+Rowing,Tide,September,TTh,9TTh,Returner,Tides,,,29,555
+Rowing,High tide,September,TTh,9TTh,Returner,Tides,,,29,556
+Rowing,Low tide,September,TTh,9TTh,Returner,Tides,,,29,205
+Low tide,Muddy,September,TTh,9TTh,Returner,Mud,,,205,558
+Water quality,Turbidity,September,TTh,9TTh,Returner,Water quality,,,156,559
+Water quality,Nitrates,September,TTh,9TTh,Returner,Water quality,,,156,560
+Water quality,Dissolved Oxygen,September,TTh,9TTh,Returner,Water quality,,,156,561
+Water quality,Salinity,September,TTh,9TTh,Returner,Water quality,,,156,562
+Water quality,Temperature,September,TTh,9TTh,Returner,Water quality,,,156,563
+Water quality,pH,September,TTh,9TTh,Returner,Water quality,,,156,564
+Bronx River,Animals,September,TTh,10TTh,Returner,Animals,,,1,216
+Bronx River,Water,September,TTh,10TTh,Returner,Water,,,1,42
+Bronx River,Trash,September,TTh,10TTh,Returner,Pollution,,,1,220
+Bronx River,Plants,September,TTh,10TTh,Returner,Plants,,,1,226
+Animals,Shrimp,September,TTh,10TTh,Returner,Animals,,,216,485
+Animals,Fish,September,TTh,10TTh,Returner,Animals,,,216,349
+Animals,Crabs,September,TTh,10TTh,Returner,Animals,,,216,22
+Animals,Birds,September,TTh,10TTh,Returner,Animals,,,216,93
+Trash,Bottles,September,TTh,10TTh,Returner,Pollution,,,220,573
+Trash,Paper,September,TTh,10TTh,Returner,Pollution,,,220,574
+Trash,Plastic bags,September,TTh,10TTh,Returner,Pollution,,,220,575
+Trash,Clothes,September,TTh,10TTh,Returner,Pollution,,,220,224
+Clothes,Shoes,September,TTh,10TTh,Returner,Pollution,,,224,577
+Clothes,Socks,September,TTh,10TTh,Returner,Pollution,,,224,578
+Plants,Seaweed,September,TTh,10TTh,Returner,Pollution,,,226,579
+Plants,Trees,September,TTh,10TTh,Returner,Pollution,,,226,340
+Water,High tide,September,TTh,10TTh,Returner,Tides,,,42,556
+Water,Low tide,September,TTh,10TTh,Returner,Tides,,,42,205
+Bronx River,Boats,September,TTh,11Tth,New,Boats,,,1,116
+Bronx River,Do people enjoy the bronx River?,September,TTh,11Tth,New,Questions,,,1,584
+Bronx River,How long has it been around?,September,TTh,11Tth,New,Questions,,,1,585
+Bronx River,Community,September,TTh,11Tth,New,Community,,,1,58
+Bronx River,Not sanitized,September,TTh,11Tth,New,Pollution,,,1,587
+Bronx River,Plants,September,TTh,11Tth,New,Plants,,,1,226
+Bronx River,Animals,September,TTh,11Tth,New,Animals,,,1,216
+Animals,Birds,September,TTh,11Tth,New,Animals,,,216,93
+Animals,Fishes,September,TTh,11Tth,New,Animals,,,216,250
+Bronx River,Do people outside the Bronx know about it?,September,TTh,11Tth,New,Outsiders thoughts,,,1,592
+Bronx River,Birds,September,TTh,12TTh,New,Animals,,,1,93
+Bronx River,Water,September,TTh,12TTh,New,Water,,,1,42
+Bronx River,Plants,September,TTh,12TTh,New,Plants,,,1,226
+Bronx River,Big Space,September,TTh,12TTh,New,"""Big space""",,,1,255
+Birds,People,September,TTh,12TTh,New,People,,,93,245
+People,Park,September,TTh,12TTh,New,Places,,,245,376
+Water,Low tide,September,TTh,12TTh,New,River characteristics,,,42,205
+Water,High tide,September,TTh,12TTh,New,River characteristics,,,42,556
+Water,Fishes,September,TTh,12TTh,New,Animals,,,42,250
+Water,Boats,September,TTh,12TTh,New,Boats,,,42,116
+Fishes,Crabs,September,TTh,12TTh,New,Animals,,,250,22
+Boats,Kayaking,September,TTh,12TTh,New,Activities,,,116,30
+Plants,Flowers,September,TTh,12TTh,New,Plants,,,226,254
+Plants,Sun,September,TTh,12TTh,New,Plants,,,226,606
+Flowers,Trees,September,TTh,12TTh,New,Plants,,,254,340
+Big space,Ghetto,September,TTh,12TTh,New,Places,,Negative,255,608
+Big space,Dirty,September,TTh,12TTh,New,Pollution,,Negative,255,54
+Bronx River,People,September,TTh,13TTh,Returner,People,,,1,245
+Bronx River,Water,September,TTh,13TTh,Returner,Water,,,1,42
+Bronx River,Boats,September,TTh,13TTh,Returner,Boats,,,1,116
+Bronx River,Dirty,September,TTh,13TTh,Returner,Pollution,,,1,54
+Bronx River,Crabs,September,TTh,13TTh,Returner,Animals,,,1,22
+Bronx River,Birds,September,TTh,13TTh,Returner,Animals,,,1,93
+Bronx River,Fish,September,TTh,13TTh,Returner,Animals,,,1,349
+Bronx River,Random things,September,TTh,13TTh,Returner,Pollution,,,1,617
+Bronx River,Beautiful landscape,September,TTh,13TTh,Returner,Beauty,,,1,618
+Bronx River,Animals,September,TTh,14TTh,Returner,Animals,,,1,216
+Bronx River,Rocks,September,TTh,14TTh,Returner,Things in the river,,,1,620
+Bronx River,Water quality,September,TTh,14TTh,Returner,Water quality,,,1,156
+Bronx River,Dock,September,TTh,14TTh,Returner,Things in the river,,,1,622
+Bronx River,Mudflat,September,TTh,14TTh,Returner,Mud,,,1,623
+Animals,Birds,September,TTh,14TTh,Returner,Animals,,,216,93
+Animals,Crabs,September,TTh,14TTh,Returner,Animals,,,216,22
+Animals,Fish,September,TTh,14TTh,Returner,Animals,,,216,349
+Bronx River,Mud,September,TTh,15TTh,Returner,Mud,,,1,278
+Bronx River,Crabs,September,TTh,15TTh,Returner,Animals,,,1,22
+Bronx River,Plants,September,TTh,15TTh,Returner,Plants,,,1,226
+Bronx River,Fish,September,TTh,15TTh,Returner,Animals,,,1,349
+Mud,My shoes getting dirty,September,TTh,15TTh,Returner,Mud,,Negative,278,631
+Bronx River,Crabs,September,TTh,16TTh,Returner,Animals,,,1,22
+Bronx River,Fish,September,TTh,16TTh,Returner,Animals,,,1,349
+Bronx River,Boats,September,TTh,16TTh,Returner,Boats,,,1,116
+Bronx River,Plants,September,TTh,16TTh,Returner,Plants,,,1,226
+Bronx River,People,September,TTh,16TTh,Returner,People,,,1,245
+Bronx River,Boats,September,TTh,16TTh,Returner,Boats,,,1,116
+Bronx River,Love,December,TTh,13TTh,Returner,Love,,,1,638
+Bronx River,Animals,December,TTh,13TTh,Returner,Animals,,,1,216
+Bronx River,Family and friends,December,TTh,13TTh,Returner,Friends,,,1,640
+Bronx River,Plants,December,TTh,14TTh,Returner,Plants,,,1,226
+Bronx River,Technical skills,December,TTh,14TTh,Returner,Skills,,,1,642
+Bronx River,Dock,December,TTh,14TTh,Returner,Things in the river,,,1,622
+Bronx River,Boats,December,TTh,14TTh,Returner,Boats,,,1,116
+Bronx River,High tide,December,TTh,14TTh,Returner,Tides,,,1,556
+Bronx River,Low tide,December,TTh,14TTh,Returner,Tides,,,1,205
+Bronx River,Birds,December,TTh,14TTh,Returner,Animals,,,1,93
+Plants,Opposite,December,TTh,14TTh,Returner,Plants,,,226,648
+Plants,Alternate,December,TTh,14TTh,Returner,Plants,,,226,649
+Bronx River,Dirt,December,TTh,16TTh,Returner,Mud,,,1,650
+Bronx River,Mud,December,TTh,16TTh,Returner,Mud,,,1,278
+Bronx River,Fishes,December,TTh,16TTh,Returner,Animals,,,1,250
+Bronx River,Boats,December,TTh,16TTh,Returner,Boats,,,1,116
+Bronx River,Birds,December,TTh,16TTh,Returner,Animals,,,1,93
+Bronx River,Oysters,December,TTh,16TTh,Returner,Animals,,,1,655
+Bronx River,Plants,December,TTh,16TTh,Returner,Plants,,,1,226
+Bronx River,Water,December,TTh,16TTh,Returner,Water,,,1,42
+Bronx River,Pollution,December,TTh,10TTh,Returner,Pollution,,,1,312
+Bronx River,Animals,December,TTh,10TTh,Returner,Animals,,,1,216
+Bronx River,RTB,December,TTh,10TTh,Returner,RTB,,,1,9
+Bronx River,Boats,December,TTh,10TTh,Returner,Boats,,,1,116
+Bronx River,Water,December,TTh,10TTh,Returner,Water,,,1,42
+Bronx River,Plants,December,TTh,10TTh,Returner,Plants,,,1,226
+Bronx River,Park,December,TTh,10TTh,Returner,Park,,,1,376
+Pollution,Bottles,December,TTh,10TTh,Returner,Pollution,,,312,573
+Pollution,Bags,December,TTh,10TTh,Returner,Pollution,,,312,666
+Pollution,Shoes,December,TTh,10TTh,Returner,Pollution,,,312,577
+Animals,Birds,December,TTh,10TTh,Returner,Animals,,,216,93
+RTB,Staff,December,TTh,10TTh,Returner,People,,,9,669
+RTB,Students,December,TTh,10TTh,Returner,People,,,9,670
+RTB,Workers,December,TTh,10TTh,Returner,People,,,9,671
+RTB,ESP,December,TTh,10TTh,Returner,People,,,9,672
+RTB,Sailing,December,TTh,10TTh,Returner,People,,,9,673
+RTB,Boatbuilding,December,TTh,10TTh,Returner,People,,,9,674
+Plants,Trees,December,TTh,10TTh,Returner,Plants,,,226,340
+Plants,Seaweed,December,TTh,10TTh,Returner,Plants,,,226,579
+RTB ,Activities,December,TTh,10TTh,Returner,Activities,,,324,677
+Water,Creatures,December,TTh,10TTh,Returner,Animals,,,42,33
+Water,Mud,December,TTh,10TTh,Returner,Mud,,,42,278
+Water,Rocks,December,TTh,10TTh,Returner,River characteristics,,,42,620
+Creatures,Crabs,December,TTh,10TTh,Returner,Animals,,,33,22
+Creatures,Shrimp,December,TTh,10TTh,Returner,Animals,,,33,485
+Creatures,Fish,December,TTh,10TTh,Returner,Animals,,,33,349
+Bronx River,Birds,December,MW,2MW,New,Animals,,,1,93
+Bronx River,Trees,December,MW,2MW,New,Plants,,,1,340
+Bronx River,Fish,December,MW,2MW,New,Animals,,,1,349
+Bronx River,Games,December,MW,2MW,New,Activities,,,1,352
+Bronx River,Christmas tree,December,MW,2MW,New,Activities,,,1,348
+Bronx River,Water,December,MW,2MW,New,Water,,,1,42
+Birds,Duck,December,MW,2MW,New,Animals,,,93,338
+Duck,Meat,December,MW,2MW,New,Animals,,,338,64
+Birds,Heron,December,MW,2MW,New,Animals,,,93,692
+Trees,Blossoms,December,MW,2MW,New,Plants,,,340,341
+Blossoms,Pink,December,MW,2MW,New,Plants,,,341,694
+Water,Sewers,December,MW,2MW,New,Pollution,,,42,695
+Blossoms,May,December,MW,2MW,New,Plants,,,341,344
+May,My birthday,December,MW,2MW,New,Stream of consciousness,,,344,697
+Water,Water quality,December,MW,2MW,New,Water quality,,,42,156
+Water quality,Science,December,MW,2MW,New,Water quality,,,156,699
+Water,Pool,December,MW,2MW,New,Places,,,42,700
+Christmas tree,Decorations,December,MW,2MW,New,Activities,,,348,701
+Fish,Eels,December,MW,2MW,New,Animals,,,349,386
+Fish,Sharks,December,MW,2MW,New,Animals,,,349,351
+Sharks,Boat flipping,December,MW,2MW,New,Emotions,,,351,704
+Games,Mines,December,MW,2MW,New,Activities,,,352,705
+Games,"""Can I borrow your cat?""",December,MW,2MW,New,Activities,,,352,706

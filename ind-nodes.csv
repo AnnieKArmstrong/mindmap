@@ -1,0 +1,707 @@
+﻿Id,Student,Source
+1,1MW,Bronx River
+3,2MW,Bronx River
+18,3MW,Bronx River
+32,4MW,Bronx River
+44,5MW,Bronx River
+108,6MW,Bronx River
+119,7MW,Bronx River
+165,8MW,Bronx River
+172,9TTh,Bronx River
+212,10TTh,Bronx River
+227,10TTh,Plants
+228,10TTh,Water
+229,10TTh,Water
+230,11Tth,Bronx River
+231,11Tth,Bronx River
+232,11Tth,Bronx River
+233,11Tth,Bronx River
+234,11Tth,Bronx River
+235,11Tth,Bronx River
+236,11Tth,Bronx River
+237,11Tth,Animals
+238,11Tth,Animals
+239,11Tth,Bronx River
+240,12TTh,Bronx River
+241,12TTh,Bronx River
+242,12TTh,Bronx River
+243,12TTh,Bronx River
+244,12TTh,Birds
+245,12TTh,People
+246,12TTh,Water
+247,12TTh,Water
+248,12TTh,Water
+249,12TTh,Water
+250,12TTh,Fishes
+251,12TTh,Boats
+252,12TTh,Plants
+253,12TTh,Plants
+254,12TTh,Flowers
+255,12TTh,Big space
+256,12TTh,Big space
+257,13TTh,Bronx River
+258,13TTh,Bronx River
+259,13TTh,Bronx River
+260,13TTh,Bronx River
+261,13TTh,Bronx River
+262,13TTh,Bronx River
+263,13TTh,Bronx River
+264,13TTh,Bronx River
+265,13TTh,Bronx River
+266,14TTh,Bronx River
+267,14TTh,Bronx River
+268,14TTh,Bronx River
+269,14TTh,Bronx River
+270,14TTh,Bronx River
+271,14TTh,Animals
+272,14TTh,Animals
+273,14TTh,Animals
+274,15TTh,Bronx River
+275,15TTh,Bronx River
+276,15TTh,Bronx River
+277,15TTh,Bronx River
+278,15TTh,Mud
+279,16TTh,Bronx River
+280,16TTh,Bronx River
+281,16TTh,Bronx River
+282,16TTh,Bronx River
+283,16TTh,Bronx River
+284,16TTh,Bronx River
+285,13TTh,Bronx River
+286,13TTh,Bronx River
+287,13TTh,Bronx River
+288,14TTh,Bronx River
+289,14TTh,Bronx River
+290,14TTh,Bronx River
+291,14TTh,Bronx River
+292,14TTh,Bronx River
+293,14TTh,Bronx River
+294,14TTh,Bronx River
+295,14TTh,Plants
+296,14TTh,Plants
+297,16TTh,Bronx River
+298,16TTh,Bronx River
+299,16TTh,Bronx River
+300,16TTh,Bronx River
+301,16TTh,Bronx River
+302,16TTh,Bronx River
+303,16TTh,Bronx River
+304,16TTh,Bronx River
+305,10TTh,Bronx River
+306,10TTh,Bronx River
+307,10TTh,Bronx River
+308,10TTh,Bronx River
+309,10TTh,Bronx River
+310,10TTh,Bronx River
+311,10TTh,Bronx River
+312,10TTh,Pollution
+313,10TTh,Pollution
+314,10TTh,Pollution
+315,10TTh,Animals
+316,10TTh,RTB
+317,10TTh,RTB
+318,10TTh,RTB
+319,10TTh,RTB
+320,10TTh,RTB
+321,10TTh,RTB
+322,10TTh,Plants
+323,10TTh,Plants
+324,10TTh,RTB 
+325,10TTh,Water
+326,10TTh,Water
+327,10TTh,Water
+328,10TTh,Creatures
+329,10TTh,Creatures
+330,10TTh,Creatures
+331,2MW,Bronx River
+332,2MW,Bronx River
+333,2MW,Bronx River
+334,2MW,Bronx River
+335,2MW,Bronx River
+336,2MW,Bronx River
+337,2MW,Birds
+338,2MW,Duck
+339,2MW,Birds
+340,2MW,Trees
+341,2MW,Blossoms
+342,2MW,Water
+343,2MW,Blossoms
+344,2MW,May
+345,2MW,Water
+346,2MW,Water quality
+347,2MW,Water
+348,2MW,Christmas tree
+349,2MW,Fish
+350,2MW,Fish
+351,2MW,Sharks
+352,2MW,Games
+353,2MW,Games
+354,1MW,Rat
+355,1MW,Cat
+356,2MW,LaGuardia
+357,2MW,6 Train
+358,2MW,Pelham Bay Park
+359,2MW,Time Square
+360,2MW,Mall
+361,2MW,RTB
+362,2MW,Adam Green
+363,2MW,Bronx River Alliance
+364,2MW,Hunts Point
+365,2MW,Majora Carter
+366,2MW,Hyde
+367,2MW,Adam Green
+368,2MW,Bronx River Parkway
+369,2MW,Jacobi Hospital
+370,2MW,Brother Islands
+371,3MW,Fishing
+372,3MW,Falling
+373,3MW,Wet
+374,3MW,Crabs
+375,3MW,?
+376,3MW,Park
+377,3MW,Fun
+378,3MW,People
+379,3MW,Birding
+380,3MW,Site seeing
+381,3MW,Rowing
+382,3MW,Kayaking
+383,3MW,Scared
+384,3MW,Swaying
+385,4MW,Creatures
+386,4MW,Eels
+387,4MW,Fish
+388,4MW,Starfish
+389,4MW,Crabs
+390,4MW,Majora Carter
+391,4MW,Hyde
+392,4MW,Pain
+393,4MW,Riverside
+394,4MW,Water
+395,4MW,Dirty
+396,4MW,Creatures dying out
+397,5MW,Views
+398,5MW,Music
+399,5MW,In my bag
+400,5MW,Happens all the time
+401,5MW,Dead bodies
+402,5MW,Dangerous
+403,5MW,Leaving Bronx
+404,5MW,College?
+405,5MW,Peace Corps
+406,5MW,Dirty
+407,5MW,Cleaning
+408,5MW,Avoiding
+409,5MW,My mom
+410,5MW,Community
+411,5MW,New friends
+412,5MW,Photos
+413,5MW,Cameras
+414,5MW,Fish
+415,5MW,Vegan
+416,5MW,Meat
+417,5MW,Food
+418,5MW,I'm always hungry
+419,5MW,Money
+420,5MW,Job
+421,5MW,Saving
+422,5MW,RTB
+423,5MW,Afterschool
+424,5MW,School
+425,5MW,Depression & Stress
+426,5MW,Solutions
+427,5MW,Concluding
+428,5MW,Environmental
+429,5MW,Rowing
+430,5MW,Hands hurt
+431,5MW,Getting wet
+432,5MW,Smells
+433,5MW,Crotona
+434,5MW,Antics
+435,5MW,Music
+436,5MW,Soundview
+437,5MW,Hunts Point
+438,5MW,Bronx
+439,5MW,Projects
+440,5MW,Ew
+441,5MW,Starlight Park
+442,5MW,Bronx Zoo
+443,5MW,Sad animals
+444,5MW,Walking
+445,5MW,Birds
+446,5MW,I'm a bird
+447,5MW,Animals
+448,4MW,Hunts Point
+449,4MW,RTB
+450,4MW,Soundview
+451,4MW,Dirty
+452,4MW,Bronx Zoo
+453,4MW,Linzy Cried
+454,4MW,I got to captain
+455,4MW,Long Island Sound
+456,4MW,Atlantic Ocean
+457,4MW,Bronx
+458,4MW,NYC
+459,4MW,New York
+460,4MW,United States
+461,6MW,Hunts Point
+462,6MW,Chopped cheese
+463,6MW,Basketball
+464,6MW,Funny
+465,6MW,People outside
+466,6MW,Water
+467,6MW,Boats
+468,6MW,Fish
+469,6MW,Blue-Crab
+470,6MW,RTB
+471,6MW,Friends
+472,7MW,Sludgy waters
+473,7MW,Pollution
+474,7MW,Forgotten species
+475,7MW,Marine wildlife
+476,1MW,Cleaning
+477,1MW,trash pickup
+478,1MW,wetland boxes
+479,1MW,Water quality
+480,1MW,Birds
+481,1MW,Swans
+482,1MW,Great blue
+483,1MW,Yellow night herons
+484,1MW,Fishing
+485,1MW,Shrimp
+486,1MW,Eels
+487,1MW,Sea horses
+488,1MW,Blue crab
+489,1MW,Plantains
+490,1MW,Trips
+491,1MW,Meeting wildlife
+492,1MW,Frost Valley
+493,1MW,Camping
+494,1MW,Weeklong
+495,1MW,Bear
+496,1MW,Hiking
+497,1MW,Falling
+498,1MW,Climbing
+499,1MW,Looking at different trees
+500,3MW,Rowing
+501,3MW,Trips
+502,3MW,Hiking
+503,3MW,Music
+504,3MW,Food
+505,3MW,Sleepover
+506,3MW,Birds
+507,3MW,Plants
+508,3MW,Water quality
+509,3MW,Performance levels
+510,3MW,[]
+511,3MW,Friends
+512,3MW,Bonds
+513,3MW,Family
+514,3MW,Friends
+515,3MW,Emotions
+516,3MW,Feelings/mood
+517,3MW,Games
+518,8MW,Rowing
+519,8MW,Crying
+520,8MW,Trips
+521,8MW,RTB
+522,8MW,The River
+523,8MW,Birds
+524,8MW,Mouctar getting on my nerves
+525,9TTh,Family
+526,9TTh,Water quality
+527,9TTh,Birding
+528,9TTh,Fishing
+529,9TTh,Rowing
+530,9TTh,PA1
+531,9TTh,PA2
+532,9TTh,PA3
+533,9TTh,PA4
+534,9TTh,SummerStudent1
+535,9TTh,SummerStudent2
+536,9TTh,SummerStudent3
+537,9TTh,SummerStudent4
+538,9TTh,SummerStudent5
+539,9TTh,SummerStudent6
+540,9TTh,SummerStudent7
+541,9TTh,SummerStudent8
+542,9TTh,Mallard
+543,9TTh,Canada goose
+544,9TTh,Great egret
+545,9TTh,Snowy egret
+546,9TTh,Black crowned night heron
+547,9TTh,Yellow night herons
+548,9TTh,Shiners
+549,9TTh,Crabs
+550,9TTh,Jellyfish
+551,9TTh,Captain
+552,9TTh,Pace
+553,9TTh,Power
+554,9TTh,Boat cleaning (not fun)
+555,9TTh,Tide
+556,9TTh,High tide
+557,9TTh,Low tide
+558,9TTh,Muddy
+559,9TTh,Turbidity
+560,9TTh,Nitrates
+561,9TTh,Dissolved Oxygen
+562,9TTh,Salinity
+563,9TTh,Temperature
+564,9TTh,pH
+565,10TTh,Animals
+566,10TTh,Water
+567,10TTh,Trash
+568,10TTh,Plants
+569,10TTh,Shrimp
+570,10TTh,Fish
+571,10TTh,Crabs
+572,10TTh,Birds
+573,10TTh,Bottles
+574,10TTh,Paper
+575,10TTh,Plastic bags
+576,10TTh,Clothes
+577,10TTh,Shoes
+578,10TTh,Socks
+579,10TTh,Seaweed
+580,10TTh,Trees
+581,10TTh,High tide
+582,10TTh,Low tide
+583,11Tth,Boats
+584,11Tth,Do people enjoy the bronx River?
+585,11Tth,How long has it been around?
+586,11Tth,Community
+587,11Tth,Not sanitized
+588,11Tth,Plants
+589,11Tth,Animals
+590,11Tth,Birds
+591,11Tth,Fishes
+592,11Tth,Do people outside the Bronx know about it?
+593,12TTh,Birds
+594,12TTh,Water
+595,12TTh,Plants
+596,12TTh,Big Space
+597,12TTh,People
+598,12TTh,Park
+599,12TTh,Low tide
+600,12TTh,High tide
+601,12TTh,Fishes
+602,12TTh,Boats
+603,12TTh,Crabs
+604,12TTh,Kayaking
+605,12TTh,Flowers
+606,12TTh,Sun
+607,12TTh,Trees
+608,12TTh,Ghetto
+609,12TTh,Dirty
+610,13TTh,People
+611,13TTh,Water
+612,13TTh,Boats
+613,13TTh,Dirty
+614,13TTh,Crabs
+615,13TTh,Birds
+616,13TTh,Fish
+617,13TTh,Random things
+618,13TTh,Beautiful landscape
+619,14TTh,Animals
+620,14TTh,Rocks
+621,14TTh,Water quality
+622,14TTh,Dock
+623,14TTh,Mudflat
+624,14TTh,Birds
+625,14TTh,Crabs
+626,14TTh,Fish
+627,15TTh,Mud
+628,15TTh,Crabs
+629,15TTh,Plants
+630,15TTh,Fish
+631,15TTh,My shoes getting dirty
+632,16TTh,Crabs
+633,16TTh,Fish
+634,16TTh,Boats
+635,16TTh,Plants
+636,16TTh,People
+637,16TTh,Boats
+638,13TTh,Love
+639,13TTh,Animals
+640,13TTh,Family and friends
+641,14TTh,Plants
+642,14TTh,Technical skills
+643,14TTh,Dock
+644,14TTh,Boats
+645,14TTh,High tide
+646,14TTh,Low tide
+647,14TTh,Birds
+648,14TTh,Opposite
+649,14TTh,Alternate
+650,16TTh,Dirt
+651,16TTh,Mud
+652,16TTh,Fishes
+653,16TTh,Boats
+654,16TTh,Birds
+655,16TTh,Oysters
+656,16TTh,Plants
+657,16TTh,Water
+658,10TTh,Pollution
+659,10TTh,Animals
+660,10TTh,RTB
+661,10TTh,Boats
+662,10TTh,Water
+663,10TTh,Plants
+664,10TTh,Park
+665,10TTh,Bottles
+666,10TTh,Bags
+667,10TTh,Shoes
+668,10TTh,Birds
+669,10TTh,Staff
+670,10TTh,Students
+671,10TTh,Workers
+672,10TTh,ESP
+673,10TTh,Sailing
+674,10TTh,Boatbuilding
+675,10TTh,Trees
+676,10TTh,Seaweed
+677,10TTh,Activities
+678,10TTh,Creatures
+679,10TTh,Mud
+680,10TTh,Rocks
+681,10TTh,Crabs
+682,10TTh,Shrimp
+683,10TTh,Fish
+684,2MW,Birds
+685,2MW,Trees
+686,2MW,Fish
+687,2MW,Games
+688,2MW,Christmas tree
+689,2MW,Water
+690,2MW,Duck
+691,2MW,Meat
+692,2MW,Heron
+693,2MW,Blossoms
+694,2MW,Pink
+695,2MW,Sewers
+696,2MW,May
+697,2MW,My birthday
+698,2MW,Water quality
+699,2MW,Science
+700,2MW,Pool
+701,2MW,Decorations
+702,2MW,Eels
+703,2MW,Sharks
+704,2MW,Boat flipping
+705,2MW,Mines
+706,2MW,"""Can I borrow your cat?"""
+491,1MW,Meeting wildlife
+492,1MW,Frost Valley
+493,1MW,Camping
+494,1MW,Weeklong
+495,1MW,Bear
+496,1MW,Hiking
+497,1MW,Falling
+498,1MW,Climbing
+499,1MW,Looking at different trees
+500,3MW,Rowing
+501,3MW,Trips
+502,3MW,Hiking
+503,3MW,Music
+504,3MW,Food
+505,3MW,Sleepover
+506,3MW,Birds
+507,3MW,Plants
+508,3MW,Water quality
+509,3MW,Performance levels
+510,3MW,[]
+511,3MW,Friends
+512,3MW,Bonds
+513,3MW,Family
+514,3MW,Friends
+515,3MW,Emotions
+516,3MW,Feelings/mood
+517,3MW,Games
+518,8MW,Rowing
+519,8MW,Crying
+520,8MW,Trips
+521,8MW,RTB
+522,8MW,The River
+523,8MW,Birds
+524,8MW,Mouctar getting on my nerves
+525,9TTh,Family
+526,9TTh,Water quality
+527,9TTh,Birding
+528,9TTh,Fishing
+529,9TTh,Rowing
+530,9TTh,PA1
+531,9TTh,PA2
+532,9TTh,PA3
+533,9TTh,PA4
+534,9TTh,SummerStudent1
+535,9TTh,SummerStudent2
+536,9TTh,SummerStudent3
+537,9TTh,SummerStudent4
+538,9TTh,SummerStudent5
+539,9TTh,SummerStudent6
+540,9TTh,SummerStudent7
+541,9TTh,SummerStudent8
+542,9TTh,Mallard
+543,9TTh,Canada goose
+544,9TTh,Great egret
+545,9TTh,Snowy egret
+546,9TTh,Black crowned night heron
+547,9TTh,Yellow night herons
+548,9TTh,Shiners
+549,9TTh,Crabs
+550,9TTh,Jellyfish
+551,9TTh,Captain
+552,9TTh,Pace
+553,9TTh,Power
+554,9TTh,Boat cleaning (not fun)
+555,9TTh,Tide
+556,9TTh,High tide
+557,9TTh,Low tide
+558,9TTh,Muddy
+559,9TTh,Turbidity
+560,9TTh,Nitrates
+561,9TTh,Dissolved Oxygen
+562,9TTh,Salinity
+563,9TTh,Temperature
+564,9TTh,pH
+565,10TTh,Animals
+566,10TTh,Water
+567,10TTh,Trash
+568,10TTh,Plants
+569,10TTh,Shrimp
+570,10TTh,Fish
+571,10TTh,Crabs
+572,10TTh,Birds
+573,10TTh,Bottles
+574,10TTh,Paper
+575,10TTh,Plastic bags
+576,10TTh,Clothes
+577,10TTh,Shoes
+578,10TTh,Socks
+579,10TTh,Seaweed
+580,10TTh,Trees
+581,10TTh,High tide
+582,10TTh,Low tide
+583,11Tth,Boats
+584,11Tth,Do people enjoy the bronx River?
+585,11Tth,How long has it been around?
+586,11Tth,Community
+587,11Tth,Not sanitized
+588,11Tth,Plants
+589,11Tth,Animals
+590,11Tth,Birds
+591,11Tth,Fishes
+592,11Tth,Do people outside the Bronx know about it?
+593,12TTh,Birds
+594,12TTh,Water
+595,12TTh,Plants
+596,12TTh,Big Space
+597,12TTh,People
+598,12TTh,Park
+599,12TTh,Low tide
+600,12TTh,High tide
+601,12TTh,Fishes
+602,12TTh,Boats
+603,12TTh,Crabs
+604,12TTh,Kayaking
+605,12TTh,Flowers
+606,12TTh,Sun
+607,12TTh,Trees
+608,12TTh,Ghetto
+609,12TTh,Dirty
+610,13TTh,People
+611,13TTh,Water
+612,13TTh,Boats
+613,13TTh,Dirty
+614,13TTh,Crabs
+615,13TTh,Birds
+616,13TTh,Fish
+617,13TTh,Random things
+618,13TTh,Beautiful landscape
+619,14TTh,Animals
+620,14TTh,Rocks
+621,14TTh,Water quality
+622,14TTh,Dock
+623,14TTh,Mudflat
+624,14TTh,Birds
+625,14TTh,Crabs
+626,14TTh,Fish
+627,15TTh,Mud
+628,15TTh,Crabs
+629,15TTh,Plants
+630,15TTh,Fish
+631,15TTh,My shoes getting dirty
+632,16TTh,Crabs
+633,16TTh,Fish
+634,16TTh,Boats
+635,16TTh,Plants
+636,16TTh,People
+637,16TTh,Boats
+638,13TTh,Love
+639,13TTh,Animals
+640,13TTh,Family and friends
+641,14TTh,Plants
+642,14TTh,Technical skills
+643,14TTh,Dock
+644,14TTh,Boats
+645,14TTh,High tide
+646,14TTh,Low tide
+647,14TTh,Birds
+648,14TTh,Opposite
+649,14TTh,Alternate
+650,16TTh,Dirt
+651,16TTh,Mud
+652,16TTh,Fishes
+653,16TTh,Boats
+654,16TTh,Birds
+655,16TTh,Oysters
+656,16TTh,Plants
+657,16TTh,Water
+658,10TTh,Pollution
+659,10TTh,Animals
+660,10TTh,RTB
+661,10TTh,Boats
+662,10TTh,Water
+663,10TTh,Plants
+664,10TTh,Park
+665,10TTh,Bottles
+666,10TTh,Bags
+667,10TTh,Shoes
+668,10TTh,Birds
+669,10TTh,Staff
+670,10TTh,Students
+671,10TTh,Workers
+672,10TTh,ESP
+673,10TTh,Sailing
+674,10TTh,Boatbuilding
+675,10TTh,Trees
+676,10TTh,Seaweed
+677,10TTh,Activities
+678,10TTh,Creatures
+679,10TTh,Mud
+680,10TTh,Rocks
+681,10TTh,Crabs
+682,10TTh,Shrimp
+683,10TTh,Fish
+684,2MW,Birds
+685,2MW,Trees
+686,2MW,Fish
+687,2MW,Games
+688,2MW,Christmas tree
+689,2MW,Water
+690,2MW,Duck
+691,2MW,Meat
+692,2MW,Heron
+693,2MW,Blossoms
+694,2MW,Pink
+695,2MW,Sewers
+696,2MW,May
+697,2MW,My birthday
+698,2MW,Water quality
+699,2MW,Science
+700,2MW,Pool
+701,2MW,Decorations
+702,2MW,Eels
+703,2MW,Sharks
+704,2MW,Boat flipping
+705,2MW,Mines
+706,2MW,"""Can I borrow your cat?"""
