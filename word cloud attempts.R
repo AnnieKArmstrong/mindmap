@@ -41,7 +41,7 @@ library(formattable)
 
 #install.packages("reactable")
 library(reactable)
-
+library(knitr)
 
 # Custom Colors -----------------------------------------------------------
 
@@ -84,24 +84,45 @@ wordcloud2(data = df, size = .25, minSize = 0, gridSize =  0,
 
 # Some Data Wrangling -----------------------------------------------------
 ind_el <- read.csv("~/Github/mindmap/ind-el.csv", fileEncoding = "UTF-8-BOM")
-el_ID<-ind_el%>%
-        select(Source, Target, Month, Group, StudentStatus, QualitativeCode, Student)
 
-tibble::rowid_to_column(ind_el, "Id")
+node_codes <- read.csv("~/Github/mindmap/node_codes.csv", fileEncoding = "UTF-8-BOM")
 
-el<- dplyr::select(ind_el, Source, Target)
+ind_nodes <- read.csv("~/Github/mindmap/ind_nodes.csv")
 
-d1<-data.frame(source=unlist(el_ID, use.names=FALSE))
-nodes <- tibble::rowid_to_column(d1, "Id")
+group_node_codes <- read.csv("~/Github/mindmap/group_node_codes.csv", fileEncoding = "UTF-8-BOM")
 
-nodes2<-nodes %>%
-        distinct(source, .keep_all = TRUE)
-
-write.csv(nodes2, "~/Github/mindmap/ind_nodes.csv") #nodes with id
-write.csv()
+group_el <- read.csv("~/Github/mindmap/group_el_real.csv", fileEncoding = "UTF-8-BOM")
 
 
-# Individual Maps ---------------------------------------------------------
+MW_node_codes <- group_node_codes %>% 
+        dplyr::select(Month, Group, Code) %>%
+        filter(Group == "MW") %>%
+        filter(Code != "Bronx River")
+TTh_node_codes <- group_node_codes %>% 
+        select(Month, Group, Code) %>%
+        filter(Group == "TTh")%>%
+        filter(Code != "Bronx River")
+#Distinct group nodes/codes
+
+d <- distinct(group_node_codes, .keep_all = TRUE)
+d
+# tibble::rowid_to_column(ind_el, "Id")
+# 
+# el<- dplyr::select(ind_el, Source, Target)
+# 
+# d1<-data.frame(source=unlist(el_ID, use.names=FALSE))
+# nodes <- tibble::rowid_to_column(d1, "Id")
+# 
+# nodes2<-nodes %>%
+#         distinct(source, .keep_all = TRUE)
+# 
+# write.csv(nodes2, "~/Github/mindmap/ind_nodes.csv") #nodes with id
+# write.csv()
+# 
+
+
+
+# MW2 Individual Maps ---------------------------------------------------------
 
 MW_2 <-dplyr::select(ind_el, Source, Target, Month, Group, 
                      QualitativeCode, StudentStatus, Student)
@@ -111,28 +132,29 @@ MW_2Dec <- filter(MW_2, Student == "2MW", Month == "December")
 
 
 
-i <-dplyr::select(MW_2, Month, QualitativeCode, Student)
-f <- filter(i, Student == "2MW")
+i <-dplyr::select(ind_el, Month, QualitativeCode, Student)
+f <- filter(i, Student == "2MW", QualitativeCode != "*")
+f
+D<- distinct(f, QualitativeCode)
+D
 
 f2<-table(f$QualitativeCode, f$Month)
 f3<- as.data.frame(f2)
 
 p <- pivot_wider(f3, id_cols = NULL, names_from = Var2, values_from = Freq)
 p <- rename(p, Code = Var1)
-p<- p %>% select(order(colnames(p), decreasing = TRUE))
 
-formattable(p)
-formattable(p, align = c("l", "c", "c"),
+p<- p %>% select(order(colnames(p), decreasing = FALSE))
+
+formattable(p, align = c("l", "c", "c"), list(
                          "Var1" = formatter("span", style = ~style(color="grey",
-                         font.weight="bold")),
-                        'December' = color_tile(customGreen,customGreen0),
-                        'September' = color_tile(customGreen,customGreen0))
-
+                         font.weight="bold"), width = 50),
+                        'December' = color_tile(customGreen0,customGreen),
+                        'September' = color_tile(customGreen0,customGreen)
+                        ))
 reactable(
-        f,
-        columns = list(
-                
-        )
+        p,
+        columns = list()
         
 )
 
@@ -251,6 +273,101 @@ plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.labe
      vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
      layout = layout.fruchterman.reingold)
 
+# MW7 Individual Mind Maps ----------------------------------------------------
+
+MW_7 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
+MW_7Dec <- filter(MW_7, Student == "7MW", Month == "December")
+
+g2<- graph_from_data_frame(MW_7Dec, directed = FALSE)
+g2
+
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+
+# MW8 Individual Mind Maps ------------------------------------------------
+
+MW_8 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
+MW_8Dec <- filter(MW_8, Student == "8MW", Month == "December")
+
+g2<- graph_from_data_frame(MW_8Dec, directed = FALSE)
+g2
+
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+# TTH9 Individual Maps ----------------------------------------------------
+
+TTH_9 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                     QualitativeCode, StudentStatus, Student)
+TTH_9Sept <- filter(TTH_9, Student == "9TTh", Month == "September")
+TTH_9Dec <- filter(TTH_9, Student == "9TTh", Month == "December")
+
+g <- graph_from_data_frame(TTH_9Sept, directed = FALSE)
+g
+
+#g2<- graph_from_data_frame(TTH_9Dec, directed = FALSE)
+#g2
+
+plot(g, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "coral", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+#plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     #vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     #layout = layout.fruchterman.reingold)
+
+
+# TTh10 Individual Maps ---------------------------------------------------
+
+TTH_10 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                      QualitativeCode, StudentStatus, Student)
+TTH_10Sept <- filter(TTH_10, Student == "10TTh", Month == "September")
+TTH_10Dec <- filter(TTH_10, Student == "10TTh", Month == "December")
+
+g <- graph_from_data_frame(TTH_10Sept, directed = FALSE)
+g
+
+g2<- graph_from_data_frame(TTH_10Dec, directed = FALSE)
+g2
+
+plot(g, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "coral", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+        vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+        layout = layout.fruchterman.reingold)
+
+
+# TTh11 Individual maps-------------------------------------------------------------------
+
+TTH_11 <-dplyr::select(ind_el, Source, Target, Month, Group, 
+                       QualitativeCode, StudentStatus, Student)
+TTH_11Sept <- filter(TTH_11, Student == "10TTh", Month == "September")
+TTH_11Dec <- filter(TTH_11, Student == "10TTh", Month == "December")
+
+g <- graph_from_data_frame(TTH_11Sept, directed = FALSE)
+g
+
+g2<- graph_from_data_frame(TTH_11Dec, directed = FALSE)
+g2
+
+plot(g, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "coral", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+plot(g2, directed = FALSE, edge.arrow.size=.3, edge.color = "black", vertex.label.cex=1,
+     vertex.label.dist=1, vertex.label.color = "black", vertex.size = 5, vertex.color = "sky blue", vertex.label.dist=10,
+     layout = layout.fruchterman.reingold)
+
+
 
 # MW September Individual Mind Maps -------------------------------------------------
 
@@ -278,6 +395,8 @@ plot(MW_Sept_Ind, directed = FALSE)
 
 gsize(MW_Sept_Ind)
 gorder(MW_Sept_Ind)
+
+
 
 
 #MW Individual Nodelist, September
@@ -407,109 +526,351 @@ plot(TTh_Dec_Ind, directed = FALSE, edge.arrow.size = .3,
 
 
 # Group Mind Map -- MW September ------------------------------------------
-grp_el <-read.csv("~/Github/mindmap/group-el.csv", fileEncoding = "UTF-8-BOM")
 
-el<- dplyr::select(grp_el, Edge, Target, Month, Group, QualitativeCode)
-MW<- filter(el, Group == "MW", Month == "September")
+el<- dplyr::select(group_el, Edge, Target, Month, Group)
+MW<- filter(el, Group == "MW", Month == "September", Edge !="", Target !="")
+MW
+# nodes <- select(grp_MW_nodes, Node, Code)
+
+# g <- graph_from_data_frame(d=MW, vertices=nodes, directed=FALSE)
+# g
+
 
 freqMW<-as.data.frame(table(MW)) # Create an edge weight column named "Freq"
 freqMW<-subset(freqMW,Freq>0) # Delete all the edges having weight equal to 0
 freqMW
 
-g=graph.data.frame(freqMW)
-g<- get.adjacency(g, sparse=FALSE)
+g=graph.data.frame(freqMW, directed = FALSE)
+#g<- get.adjacency(g, sparse=FALSE)
 g
+plot(g)
 
+# MW_Sept_Grp <- graph_from_adjacency_matrix(g, directed = FALSE)
+# plot(MW_Sept_Grp, directed = FALSE)
 
-MW_Sept_Grp <- graph_from_adjacency_matrix(g)
-plot(MW_Sept_Grp, directed = FALSE)
+gsize(g)
+gorder(g)
 
-gsize(MW_Sept_Grp)
-gorder(MW_Sept_Grp)
-
-V(MW_Sept_Grp)
-E(MW_Sept_Grp)
+V(g)
+E(g)
 
 #Network Density
-edge_density(MW_Sept_Grp)
+edge_density(g)
+
+
+#Degree Centrality
+deg<-degree(g, mode=c("All"))
+V(g)$degree<-deg
+V(g)$degree
+which.max(deg)
+V(g)
+
+
+#Eigenvector Centrality
+eig<-evcent(g)$vector
+V(g)$Eigen<-eig
+V(g)$Eigen
+which.max(eig)
+
+#Betweenness Centrality
+
+alumnet_bw<-estimate_betweenness(g, 
+                                 vids = V(g), 
+                                 directed = TRUE,
+                                 weights=NA,
+                                 cutoff=0)
+alumnet_bw
+
+edge_betweenness(g)
+betweenness(g)
+
 
 set.seed(1001)
-code <- MW_Sept_Grp$QualitativeCode
-pal<-brewer.pal(length(code), "Spectral")
+V(g)$size <- V(g)$Eigen 
 
-q<-plot(MW_Sept_Grp, directed = FALSE, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
-     vertex.label.dist=1, vertex.size = 5, vertex.color="Purple",
-     layout = layout.davidson.harel)
+# q<-plot(MW_Sept_Grp, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
+#      vertex.label.dist=1, vertex.size = 5, vertex.color="Coral",
+#      layout = layout.fruchterman.reingold)
 
+plot(g, edge.color="darkslategray", vertex.label.cex=.75, vertex.size=V(g)$degree*1.5, vertex.label.dist=1.5, 
+    layout=layout.fruchterman.reingold, vertex.color = "coral", vertex.label.color = "black")
+
+
+# Group Plot MW December --------------------------------------------------
+
+el<- dplyr::select(group_el, Edge, Target, Month, Group)
+MW<- filter(group_el, Group == "MW", Month == "December", Edge !="", Target !="")
+MW
+# nodes <- select(grp_MW_nodes, Node, Code)
+
+# g <- graph_from_data_frame(d=MW, vertices=nodes, directed=FALSE)
+# g
+
+
+freqMW<-as.data.frame(table(MW)) # Create an edge weight column named "Freq"
+freqMW<-subset(freqMW,Freq>0) # Delete all the edges having weight equal to 0
+freqMW
+
+g=graph.data.frame(freqMW, directed = FALSE)
+#g<- get.adjacency(g, sparse=FALSE)
+g
+plot(g)
+
+# MW_Sept_Grp <- graph_from_adjacency_matrix(g, directed = FALSE)
+# plot(MW_Sept_Grp, directed = FALSE)
+
+gsize(g)
+gorder(g)
+
+V(g)
+E(g)
+
+#Network Density
+edge_density(g)
+
+
+#Degree Centrality
+deg<-degree(g, mode=c("All"))
+V(g)$degree<-deg
+V(g)$degree
+which.max(deg)
+V(g)
+
+
+#Eigenvector Centrality
+eig<-evcent(g)$vector
+V(g)$Eigen<-eig
+V(g)$Eigen
+which.max(eig)
+
+#Betweenness Centrality
+
+alumnet_bw<-estimate_betweenness(g, 
+                                 vids = V(g), 
+                                 directed = TRUE,
+                                 weights=NA,
+                                 cutoff=0)
+alumnet_bw
+
+edge_betweenness(g)
+betweenness(g)
+
+
+set.seed(1001)
+V(g)$size <- V(g)$Eigen 
+
+# q<-plot(MW_Sept_Grp, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
+#      vertex.label.dist=1, vertex.size = 5, vertex.color="Coral",
+#      layout = layout.fruchterman.reingold)
+
+plot(g, edge.color="darkslategray", vertex.label.cex=.75, vertex.size=V(g)$degree*1.5, vertex.label.dist=1.5, 
+     layout=layout.fruchterman.reingold, vertex.color = "sky blue", vertex.label.color = "black")
 
 # Tuesday Thursday September Group Map ------------------------------------
 
-el<- dplyr::select(grp_el, Edge, Target, Month, Group, QualitativeCode)
-TTh<- filter(el, Group == "TTh", Month == "September")
+TTh<- filter(group_el, Group == "TTh", Month == "September")
 
 freqTTh<-as.data.frame(table(TTh)) # Create an edge weight column named "Freq"
 freqTTh<-subset(freqTTh,Freq>0) # Delete all the edges having weight equal to 0
+
 freqTTh
 
-g=graph.data.frame(freqTTh)
-g<- get.adjacency(g, sparse=FALSE)
+g=graph.data.frame(freqTTh, directed = FALSE)
+#g<- get.adjacency(g, sparse=FALSE)
 g
 
 
-TTh_Sept_Grp <- graph_from_adjacency_matrix(g)
-plot(TTh_Sept_Grp, directed = FALSE)
+#TTh_Sept_Grp <- graph_from_adjacency_matrix(g)
+plot(g)
 
-gsize(TTh_Sept_Grp)
-gorder(TTh_Sept_Grp)
-
-V(TTh_Sept_Grp)
-E(TTh_Sept_Grp)
+# gsize(TTh_Sept_Grp)
+# gorder(TTh_Sept_Grp)
+# 
+# V(TTh_Sept_Grp)
+# E(TTh_Sept_Grp)
 
 #Network Density
 edge_density(TTh_Sept_Grp)
 
-set.seed(1001)
-code <- MW_Sept_Grp$QualitativeCode
-pal<-brewer.pal(length(code), "Spectral")
+#Network Density
+edge_density(g)
 
-q<-plot(TTh_Sept_Grp, directed = FALSE, edge.arrow.size=.3,edge.width=freqMW$Freq, #vertex.color = "darkgoldenrod2", edge.color='deepskyblue2',vertex.label.cex=0.5,
-        vertex.label.dist=1, vertex.size = 5, vertex.color="SkyBlue",
-        layout = layout.davidson.harel)
+
+#Degree Centrality
+deg<-degree(g, mode=c("All"))
+V(g)$degree<-deg
+V(g)$degree
+which.max(deg)
+V(g)
+
+
+#Eigenvector Centrality
+eig<-evcent(g)$vector
+V(g)$Eigen<-eig
+V(g)$Eigen
+which.max(eig)
+
+#Betweenness Centrality
+
+alumnet_bw<-estimate_betweenness(g, 
+                                 vids = V(g), 
+                                 directed = TRUE,
+                                 weights=NA,
+                                 cutoff=0)
+set.seed(1001)
+plot(g, edge.color="darkslategray",vertex.label.cex=.75, 
+     vertex.size=V(g)$degree*1.5, vertex.label.dist=1.5, 
+     vertex.color = "coral", vertex.label.color = "black")
+
+
+# Group Map Tuesday Thursday December -------------------------------------
+TTh<- filter(group_el, Group == "TTh", Month == "December")
+
+freqTTh<-as.data.frame(table(TTh)) # Create an edge weight column named "Freq"
+freqTTh<-subset(freqTTh,Freq>0) # Delete all the edges having weight equal to 0
+
+freqTTh
+
+g=graph.data.frame(freqTTh, directed = FALSE)
+#g<- get.adjacency(g, sparse=FALSE)
+g
+
+
+#TTh_Sept_Grp <- graph_from_adjacency_matrix(g)
+plot(g)
+
+# gsize(TTh_Sept_Grp)
+# gorder(TTh_Sept_Grp)
+# 
+# V(TTh_Sept_Grp)
+# E(TTh_Sept_Grp)
+
+#Network Density
+edge_density(TTh_Sept_Grp)
+
+#Network Density
+edge_density(g)
+
+
+#Degree Centrality
+deg<-degree(g, mode=c("All"))
+V(g)$degree<-deg
+V(g)$degree
+which.max(deg)
+V(g)
+
+
+#Eigenvector Centrality
+eig<-evcent(g)$vector
+V(g)$Eigen<-eig
+V(g)$Eigen
+which.max(eig)
+
+#Betweenness Centrality
+
+alumnet_bw<-estimate_betweenness(g, 
+                                 vids = V(g), 
+                                 directed = TRUE,
+                                 weights=NA,
+                                 cutoff=0)
+set.seed(1001)
+plot(g, edge.color="darkslategray",vertex.label.cex=.75, 
+     vertex.size=V(g)$degree*1.5, vertex.label.dist=1.5, 
+     vertex.color = "sky blue", vertex.label.color = "black")
+
 
 # Code Frequency Comparisons -- Mind Maps ---------------------------------
+i <-dplyr::select(ind_el, Month, QualitativeCode)
+
+f<-table(i$QualitativeCode, i$Month)
+
+f2<- as.data.frame(f)
+
+p <- pivot_wider(f2, id_cols = NULL, names_from = Var2, values_from = Freq)
+p <- rename(p, Code = Var1)
+
+p<- p %>% select(order(colnames(p), decreasing = FALSE))
+
+formattable(p, align = c("l", "c", "c"), list(
+        "Var1" = formatter("span", style = ~style(color="grey",
+                                                  font.weight="bold")),
+        'September' = color_tile(customGreen0,customGreen),
+        'December' = color_tile(customGreen0,customGreen)
+))
 
 
-##Tuesday THursday Comparisons
+##Within Group Tuesday THursday Comparisons -- 
 
-TThQualCode <- select(el, Month, Group, QualitativeCode)
-TThQualCode<- filter(TThQualCode, Group == "TTh")
+TTh_node_table <- table(TTh_node_codes)
+TTh_node_table <-as.data.frame(TTh_node_table) %>%
+    filter(Freq > 5)
 
-qualcode<-table(TThQualCode)
-qualcode<-table($QualitativeCode)
-qualcode<-as.data.frame(qualcode)
 
-q<- ggplot(data = qualcode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill = Month))+
-        geom_col(position="dodge")
-q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+q<-ggplot(data = TTh_node_table, aes(x=reorder(Code,Freq) , y = Freq, fill = Month))+
+        geom_bar(stat="identity")
 
-p<-ggplot(data = qualcode, mapping = aes(x = reorder(Var1, Freq), y = Freq, fill= Freq ))+
-        geom_col(stat = "identity") 
-        
-p <- p + coord_flip() + scale_fill_distiller(palette = "Purples") +
-        xlab("Code Frequency") + ylab("Qualitative Code")
-p
+q
+q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency") +
+        labs(title="Aggregated Individual Mind Map Code Frequencies", 
+             subtitle = "Tuesday/Thursday Group")
 
-##Monday Wednesday Comparisons
-MWQualCode <-select(el, Month, Group, QualitativeCode)
-MWQualCode <- filter(MWQualCode, Group == "MW")
+# TThQualCode <- dplyr::select(ind_el, Month, Group, QualitativeCode)
+# TThQualCode<- filter(TThQualCode, Group == "TTh")
+# 
+# qualcode<-table(TThQualCode)
+# qualcode<-as.data.frame(qualcode)
+# 
+# q<- ggplot(data = qualcode, aes(x=reorder(QualitativeCode,Freq), y=Freq, fill = Month))+
+#         geom_col(position="dodge")
+# q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+# 
+# 
+# p<-ggplot(data = qualcode, mapping = aes(x = reorder(Var1, Freq), y = Freq, fill= Freq ))+
+#         geom_col(stat = "identity") 
+#         
+# p <- p + coord_flip() + scale_fill_distiller(palette = "Purples") +
+#         xlab("Code Frequency") + ylab("Qualitative Code")
+# p
 
-MWQualCode<-table(MWQualCode)
-qualcode2<-as.data.frame(MWQualCode)
-class(qualcode2)
+##Within Group Monday Wednesday Comparisons
 
-q <- ggplot(data = qualcode2, aes(x=reorder(QualitativeCode,Freq), y=Freq,fill=Month))+
-        geom_col(position="dodge")
-q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+MW_node_table <- table(MW_node_codes)
+MW_node_table <-as.data.frame(MW_node_table)
+
+q<-ggplot(data = MW_node_table, aes(x=reorder(Code,Freq), y = Freq, fill = Month))+
+        geom_bar(stat="identity")
+
+q
+q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency") +
+labs(title="Aggregated Individual Mind Map Code Frequencies", 
+     subtitle = "Monday/Wednesday Group")
+
+
+# MWQualCode <-dplyr::select(ind_el, Month, Group, QualitativeCode)
+# MWQualCode <- filter(MWQualCode, Group == "MW")
+# 
+# MWQualCode<-table(MWQualCode)
+# qualcode2<-as.data.frame(MWQualCode)
+# class(qualcode2)
+# qualcode2
+# 
+# q <- ggplot(data = qualcode2, aes(x=reorder(QualitativeCode,Freq), y = Freq, fill=Month))+
+#         geom_bar(stat = "identity")
+# q
+# q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")
+# 
+# 
+# MWQualCode <-dplyr::select(ind_el, Month, Group, QualitativeCode)
+# MWQualCode <- filter(MWQualCode, Group == "MW", Month =="December")
+# 
+# MWQualCode<-table(MWQualCode)
+# qualcode2<-as.data.frame(MWQualCode)
+# class(qualcode2)
+# 
+# q <- ggplot(data = qualcode2, aes(x=reorder(QualitativeCode,Freq), y=Freq,fill="Sky Blue")) +
+#         geom_col(position="dodge")
+# q + coord_flip() + xlab("Qualitative Code") + ylab("Code Frequency")+ 
+#         scale_fill_manual(values = c("December" = "Sky Blue"))
 
 ##Comparing both groups -- September
 
